@@ -3,6 +3,8 @@ body {
 }
 h1 {
   text-align: center;
+  margin: auto;
+  font-size: 20px;
 }
 .profil {
   width: 500px;
