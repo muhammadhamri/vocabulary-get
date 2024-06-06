@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Utama</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-image: url(../../gif/halamanutama.gif);
+        width: 100%;
+        height: 100vh;
+        /* background-repeat: no-repeat; */
+        background-position: center;
+        box-sizing: border-box;
+        /* overflow: hidden; */
+      }
+
+      /* .container {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(green, blue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      } */
+
+      .tombol a {
+        text-decoration: none;
+        font-size: 40px;
+        color: rgb(0, 0, 0);
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 30px;
+      }
+
+      .materi {
+        margin-left: 25px;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        height: 50px;
+        width: 130px;
+        border-radius: 8px;
+        display: flex;
+        background-color: aliceblue;
+        animation: tombol 2s ease-in-out infinite;
+      }
+
+      @keyframes tombol {
+        0% {
+          background-image: linear-gradient(green, purple);
+        }
+
+        25% {
+          background-image: linear-gradient(yellow, rgb(0, 7, 100));
+        }
+
+        50% {
+          background-image: linear-gradient(rgb(241, 145, 145), rgb(61, 61, 218));
+        }
+        75% {
+          background-image: linear-gradient(grey, rgb(233, 11, 48));
+        }
+
+        100% {
+          background-image: linear-gradient(rgb(250, 114, 148), rgb(12, 245, 226));
+        }
+      }
+
+      .profil {
+        text-align: center;
+        margin: auto;
+      }
+      .profil a {
+        text-decoration: none;
+        color: rgb(243, 233, 233);
+      }
+
+      .materi:hover {
+        transform: scale(1.2);
+      }
+
+      .container {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        gap: 8px;
+        /* margin-top: 80px; */
+        flex-wrap: wrap;
+      }
+
+      .container a {
+        text-decoration: none;
+      }
+
+      .noun {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+      }
+
+      .verb {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+      }
+
+      .adjective {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+      }
+
+      .personal-pronoun {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+      }
+
+      .noun,
+      .verb,
+      .adjective,
+      .personal-pronoun {
+        width: 150px;
+        height: 150px;
+        box-shadow: 6px 6px 6px 4px rgb(255, 255, 255);
+        border-radius: 15px;
+      }
+
+      @media (min-width: 500px) {
+        .container {
+          width: 600px;
+          gap: 20px;
+          margin-top: 100px;
+        }
+        .noun,
+        .verb,
+        .adjective,
+        .personal-pronoun {
+          width: 150px;
+          height: 150px;
+          box-shadow: 6px 6px 6px 4px rgb(255, 255, 255);
+          border-radius: 15px;
+        }
+      }
+
+      .noun p,
+      .verb p,
+      .adjective p,
+      .personal-pronoun p {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        padding-top: 10px;
+      }
+
+      .emoji {
+        display: block;
+        font-size: 70px;
+        margin-top: -30px;
+      }
+
+      .keterangan {
+        width: 300px;
+        margin: auto;
+        text-align: center;
+        color: rgb(245, 245, 235);
+        font-size: 17px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="container"> -->
+    <div class="materi">
+      <div class="profil"><a href="../profil-pengembang/index.html" target="_blank">PROFIL PENGEMBANG</a></div>
+    </div>
+    <!-- <div class="tombol">
+        <a href="../kata-benda/animal/index.html">Start Game</a>
+      </div> -->
+
+    <div class="container">
+      <a href="../noun/noun1/preface.html" target="_blank">
+        <div class="noun">
+          <p>NOUN</p>
+          <p class="emoji">💻</p>
+          <p></p>
+        </div>
+      </a>
+
+      <a href="../verb/verb1/preface.html" target="_blank">
+        <div class="verb">
+          <p>VERB</p>
+          <p class="emoji">🏅</p>
+        </div>
+      </a>
+
+      <a href="../adjective/adj1/preface.html" target="_blank">
+        <div class="adjective">
+          <p>ADJECTIVE</p>
+          <p class="emoji">✨</p>
+        </div>
+      </a>
+
+      <a href="../grammar/grammar1/preface.html" target="_blank">
+        <div class="personal-pronoun">
+          <p>GRAMMAR</p>
+          <p class="emoji">🎖️</p>
+        </div>
+      </a>
+
+      <a href="../intermediate/intermediate1/preface.html" target="_blank">
+        <div class="noun">
+          <p>INTERMEDIATE</p>
+          <p class="emoji">⭐</p>
+          <p></p>
+        </div>
+      </a>
+
+      <a href="../advance/advance1/preface.html" target="_blank">
+        <div class="noun">
+          <p>ADVANCE</p>
+          <p class="emoji">🏆</p>
+          <p></p>
+        </div>
+      </a>
+    </div>
+
+    <!-- <div class="keterangan">
+        <p>Siapa bilang belajar kosa kata Bahasa Inggris itu membosankan? di V-GET aja, belajar sambil bermain dan penuh tantangan.</p>
+      </div> -->
+
+    <!-- <audio class="backsound" loop autoplay>
+        <source src="song1.mp3" />
+      </audio> -->
+    <!-- </div> -->
+
+    <!-- <script>
+      const tombol = document.querySelector(".tombol");
+      const sound = document.querySelector(".backsound");
+
+      tombol.addEventListener("click", function () {
+        sound.play();
+      });
+
+      sound.volume = 0.1;
+    </script> -->
+  </body>
+</html>

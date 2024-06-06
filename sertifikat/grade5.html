@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sertifikat5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        overflow: hidden;
+      }
+
+      #certificate {
+        width: 1500px;
+        height: 1000px;
+        /* background-color: #206cdf; */
+        border: 2px solid #000;
+        /* padding: 20px; */
+        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+        transform: translate(-500%);
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        background-image: url(../../image/sertifikat/5.png);
+        background-size: cover;
+        background-position: center;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .header h1 {
+        margin: 0;
+        font-size: 28px;
+        color: #000;
+      }
+
+      .content {
+        text-align: center;
+      }
+
+      .content h2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 24px;
+        color: #007bff;
+      }
+
+      .content p {
+        margin: 5px 0;
+        font-size: 16px;
+        color: #000;
+      }
+
+      .download {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%);
+        display: block;
+        width: 200px;
+        height: 30px;
+        background-color: green;
+        border-radius: 8px;
+        color: #f0f0f0;
+      }
+
+      .btn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%);
+        display: none;
+      }
+
+      .form {
+        /* width: 150px; */
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%);
+      }
+
+      #username {
+        /* position: absolute;
+        left: 50%;
+        top: 12%;
+        transform: translate(-50%); */
+        margin: 215px auto;
+        font-size: 5rem;
+        font-style: italic;
+        white-space: nowrap;
+      }
+
+      #inputName {
+        text-align: center;
+      }
+
+      .next-level {
+        /* border: 1px solid black; */
+        width: 400px;
+        height: 100px;
+        margin: auto;
+        background-color: transparent;
+        display: flex;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%);
+        display: none;
+        align-content: center;
+      }
+
+      .next-level a {
+        display: block;
+        font-size: 22px;
+        width: 300px;
+        height: 40px;
+        background-color: rgb(49, 226, 43);
+        margin: auto;
+        line-height: 40px;
+        text-decoration: none;
+        font-weight: bolder;
+        border-radius: 10px;
+        color: #f0f0f0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <center>
+      <div class="container">
+        <div id="certificate">
+          <div class="header">
+            <!-- <h1>Certificate of Completion</h1> -->
+          </div>
+          <div class="content">
+            <!-- <p>This certificate is awarded to</p> -->
+            <h2 id="username">John Doe</h2>
+            <!-- <p>for successfully completing the Expert Level</p>
+          <p>inhe Game  tof Knowledge</p> -->
+          </div>
+        </div>
+        <form action="" class="form">
+          <label for="inputName">Tuliskan Nama Anda : </label>
+          <input type="text" id="inputName" placeholder="Enter your name" autocomplete="off" focus />
+        </form>
+
+        <button class="download" id="downloadButton">Download Sertifikat</button>
+
+        <!-- <button class="btn btn-primary" type="button" disabled>
+          <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+          <span class="visually-hidden" role="status">Loading...</span>
+        </button> -->
+        <button class="btn btn-primary" type="button" disabled>
+          <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+          <span role="status">Loading...</span>
+        </button>
+
+        <div class="next-level"><a href="../../advance/anouncement/preface.html">LANJUT KE GRADE ENAM</a></div>
+      </div>
+    </center>
+
+    <!-- BOOTSTRAP START-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP END -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"
+      integrity="sha512-tVYBzEItJit9HXaWTPo8vveXlkK62LbA+wez9IgzjTmFNLMBO1BEYladBw2wnM3YURZSMUyhayPCoLtjGh84NQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      // // Mendapatkan elemen formulir dan tombol download
+      // var form = document.querySelector(".form");
+      // var downloadButton = document.getElementById("downloadButton");
+
+      // // Menambahkan event listener untuk mengirimkan formulir
+      // form.addEventListener("submit", function (event) {
+      //   // Mencegah perilaku default pengiriman formulir
+      //   event.preventDefault();
+
+      //   // Menonaktifkan formulir
+      //   form.style.display = "none";
+      //   // Menampilkan tombol download
+      //   downloadButton.style.display = "block";
+      // });
+
+      // document.getElementById("downloadButton").addEventListener("click", function () {
+      //   const username = document.getElementById("inputName").value.trim();
+      //   const usernameElement = document.getElementById("username");
+      //   const download = document.querySelector(".download");
+      //   const spinner = document.querySelector(".btn");
+      //   const nextLevel = document.querySelector(".next-level");
+      //   const form = document.querySelector(".form");
+      //   if (username) {
+      //     usernameElement.textContent = username;
+
+      //     html2canvas(document.getElementById("certificate")).then(function (canvas) {
+      //       const a = document.createElement("a");
+      //       a.download = username + "_certificate.jpg";
+      //       a.href = canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
+      //       document.body.appendChild(a);
+      //       a.click();
+      //       document.body.removeChild(a);
+      //       spinner.style.display = "block";
+      //       download.style.display = "none";
+      //       form.style.display = "none";
+      //     });
+      //   } else {
+      //     alert("Please enter your name.");
+      //   }
+      // });
+
+      ////////////////////////// BATAS///////////////////
+
+      document.getElementById("downloadButton").addEventListener("click", function () {
+        const username = document.getElementById("inputName").value.trim();
+        const usernameElement = document.getElementById("username");
+        const download = document.querySelector(".download");
+        const spinner = document.querySelector(".btn"); // Assuming .spinner instead of .btn
+        const nextLevel = document.querySelector(".next-level");
+        const form = document.querySelector(".form");
+
+        if (!username) {
+          alert("Silakan tulis nama Anda");
+        } else {
+          // Set the username in the certificate
+          usernameElement.textContent = username;
+
+          // Show spinner, hide form and download button
+          spinner.style.display = "block";
+          download.style.display = "none";
+          form.style.display = "none";
+
+          // Generate the certificate and download it
+          html2canvas(document.getElementById("certificate"))
+            .then(function (canvas) {
+              const a = document.createElement("a");
+              a.download = username + "_certificate.jpg";
+              a.href = canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
+              document.body.appendChild(a);
+              a.click();
+              document.body.removeChild(a);
+
+              // After download, hide spinner and show next level
+              spinner.style.display = "none";
+              nextLevel.style.display = "block";
+            })
+            .catch(function (error) {
+              console.error("Error generating certificate:", error);
+              spinner.style.display = "none";
+              download.style.display = "block";
+              form.style.display = "block";
+              alert("An error occurred while generating the certificate. Please try again.");
+            });
+        }
+      });
+    </script>
+  </body>
+</html>

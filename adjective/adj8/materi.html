@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(112, 131, 131);
+        padding: 0;
+        margin: 0;
+        line-height: 1.25;
+        height: 2000px;
+      }
+      .judul {
+        text-align: center;
+        margin: 30px auto;
+      }
+      .container-satu {
+        margin: 50px auto;
+        max-width: 1000px;
+      }
+
+      .container-dua {
+        margin: 50px auto;
+        max-width: 1000px;
+      }
+
+      .layanan {
+        padding: 10px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+      }
+
+      .kembali {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: #e4405f;
+        overflow: hidden;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .kembali h3 {
+        font-size: 15px;
+        font-weight: bold;
+        color: aliceblue;
+      }
+
+      /* SLIDE IMAGE START */
+
+      .slider {
+        width: 450px;
+        height: 250px;
+        overflow: hidden;
+        margin: auto;
+      }
+
+      .slides {
+        width: 500%;
+        height: 250px;
+        transition: 3s;
+        display: flex;
+      }
+
+      .slide {
+        width: 20%;
+        height: 250px;
+        transition: 3s;
+      }
+
+      .slides input {
+        display: none;
+      }
+
+      .slide img {
+        width: 450px;
+        height: 250px;
+      }
+
+      .navigation-auto {
+        display: flex;
+        position: absolute;
+        width: 450px;
+        margin-top: 210px;
+        justify-content: center;
+      }
+
+      .navigation-auto div {
+        padding: 5px;
+        border-radius: 50%;
+        border: 2px solid black;
+      }
+
+      .navigation-auto div:not(:last-child) {
+        margin-right: 40px;
+      }
+
+      #radio1:checked ~ .navigation-auto div.auto-btn1 {
+        background-color: red;
+      }
+
+      #radio2:checked ~ .navigation-auto div.auto-btn2 {
+        background-color: red;
+      }
+      #radio3:checked ~ .navigation-auto div.auto-btn3 {
+        background-color: red;
+      }
+      #radio4:checked ~ .navigation-auto div.auto-btn4 {
+        background-color: red;
+      }
+
+      .navigation-manual {
+        display: flex;
+        position: absolute;
+        margin-top: -40px;
+        width: 450px;
+        justify-content: center;
+      }
+
+      .manual-btn {
+        padding: 5px;
+        border-radius: 50%;
+        border: 2px solid blue;
+      }
+
+      .manual-btn:not(:last-child) {
+        margin-right: 40px;
+      }
+
+      .manual-btn:hover {
+        background-color: #e4405f;
+      }
+
+      #radio1:checked ~ .first {
+        margin-left: 0;
+      }
+      #radio2:checked ~ .first {
+        margin-left: -20%;
+      }
+      #radio3:checked ~ .first {
+        margin-left: -40%;
+      }
+      #radio4:checked ~ .first {
+        margin-left: -60%;
+      }
+
+      @media (min-width: 600px) {
+        .container-satu {
+          display: flex;
+          justify-content: space-evenly;
+          box-sizing: border-box;
+        }
+
+        .container-dua {
+          display: flex;
+          justify-content: space-evenly;
+          box-sizing: border-box;
+        }
+
+        .layanan {
+          width: 30%;
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+
+        .slider,
+        .slide img {
+          width: 800px;
+          height: 350px;
+          margin: auto;
+        }
+
+        .navigation-auto {
+          margin-top: 310px;
+          justify-content: center;
+          width: 800px;
+        }
+
+        .navigation-manual {
+          margin-top: 60px;
+          justify-content: center;
+          width: 800px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="judul">DI SINI JUDUL</h2>
+
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+
+        <div class="slide first">
+          <img src="../../image/noun/animal1.png" alt="" />
+        </div>
+
+        <div class="slide">
+          <img src="../../image/noun/animal2.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="../../image/noun/animal3.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="../../image/noun/animal4.png" alt="" />
+        </div>
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-satu">
+      <div class="layanan satu">
+        <h2>layanan satu</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta magni corrupti architecto consequuntur ipsum. Nesciunt accusamus repellat id, provident, eius molestias minima ullam libero esse soluta, impedit magnam! Fuga, illo!
+        </p>
+      </div>
+      <div class="layanan dua">
+        <h2>layanan dua</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, exercitationem! Voluptate, inventore. Aliquam nulla alias recusandae maiores magnam perferendis dignissimos. Architecto maxime rerum nemo qui officia amet iusto harum
+          consectetur.
+        </p>
+      </div>
+      <div class="layanan tiga">
+        <h2>Layanan tiga</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, quisquam? Molestiae vitae at odio, deleniti, voluptatibus minima, illum eum itaque vel sequi quia eligendi beatae ad vero hic ea eos.</p>
+      </div>
+    </div>
+
+    <div class="container-dua">
+      <div class="layanan empat">
+        <h2>layanan empat</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta magni corrupti architecto consequuntur ipsum. Nesciunt accusamus repellat id, provident, eius molestias minima ullam libero esse soluta, impedit magnam! Fuga, illo!
+        </p>
+      </div>
+      <div class="layanan lima">
+        <h2>layanan Lima</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, exercitationem! Voluptate, inventore. Aliquam nulla alias recusandae maiores magnam perferendis dignissimos. Architecto maxime rerum nemo qui officia amet iusto harum
+          consectetur.
+        </p>
+      </div>
+      <div class="layanan enam">
+        <h2>Layanan enam</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, quisquam? Molestiae vitae at odio, deleniti, voluptatibus minima, illum eum itaque vel sequi quia eligendi beatae ad vero hic ea eos.</p>
+      </div>
+    </div>
+
+    <div class="kembali">
+      <a href="index.html"> <h3>back to game</h3></a>
+    </div>
+
+    <script>
+      var counter = 1;
+      var increasing = true;
+      setInterval(function () {
+        document.getElementById("radio" + counter).checked = true;
+        if (increasing) {
+          counter++;
+          if (counter > 4) {
+            counter = 3;
+            increasing = false;
+          }
+        } else {
+          counter--;
+          if (counter < 1) {
+            counter = 2;
+            increasing = true;
+          }
+        }
+      }, 3000);
+    </script>
+  </body>
+</html>

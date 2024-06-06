@@ -1,0 +1,1915 @@
+body {
+  background-image: linear-gradient(green, blue);
+  /* overflow: hidden; */
+  width: 100%;
+  height: 100vh;
+}
+.aplause {
+  background-image: url(../../gif/background\ .gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: -400px;
+  display: none;
+  z-index: 999px;
+}
+
+.kecewa {
+  background-image: url(../../gif/kecewa1.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: none;
+  top: -200px;
+
+  z-index: 999px;
+}
+
+.game-container {
+  margin-top: 180px;
+}
+.tombol {
+  margin-left: 25px;
+  position: absolute;
+  top: 30px;
+  height: 50px;
+  width: 130px;
+  border-radius: 8px;
+  display: flex;
+  background-color: aliceblue;
+  animation: tombol 2s ease-in-out infinite;
+}
+
+@keyframes tombol {
+  0% {
+    background-image: linear-gradient(green, purple);
+  }
+
+  25% {
+    background-image: linear-gradient(yellow, rgb(0, 7, 100));
+  }
+
+  50% {
+    background-image: linear-gradient(rgb(241, 145, 145), rgb(61, 61, 218));
+  }
+  75% {
+    background-image: linear-gradient(grey, rgb(233, 11, 48));
+  }
+
+  100% {
+    background-image: linear-gradient(rgb(250, 114, 148), rgb(12, 245, 226));
+  }
+}
+
+.profil {
+  text-align: center;
+  margin: auto;
+}
+.profil a {
+  text-decoration: none;
+  color: rgb(243, 233, 233);
+}
+
+.tombol:hover {
+  transform: scale(1.2);
+}
+/* game 1 start */
+
+.game1 {
+  /* display: none; */
+  transition: 2s;
+  margin-top: 215px;
+}
+.gamekotak1 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(2, 22, 22);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h21 {
+  color: antiquewhite;
+  margin: auto;
+}
+
+.imagekotak1 {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(255, 0, 0);
+  transition: transform 1s ease-in-out;
+  /* background-image: url(../../image/verb/angkat.png); */
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+.imagekotaksatu {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(30, 255, 0);
+  transition: transform 1s ease-in-out;
+  background-image: url(../../image/verb/berangkat.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+
+.imagekotakdua {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(30, 255, 0);
+  transition: transform 1s ease-in-out;
+  background-image: url(../../image/adjective/marah.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+.imagekotaktiga {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(30, 255, 0);
+  transition: transform 1s ease-in-out;
+  background-image: url(../../image/verb/beli.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+.imagekotakempat {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(30, 255, 0);
+  transition: transform 1s ease-in-out;
+  background-image: url(../../image/verb/berangkat.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+.imagekotaklima {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(30, 255, 0);
+  transition: transform 1s ease-in-out;
+  background-image: url(../../image/verb/berdiri.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+.imagekotakenam {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(30, 255, 0);
+  transition: transform 1s ease-in-out;
+  background-image: url(../../image/verb/datang.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+.imagekotaktujuh {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(30, 255, 0);
+  transition: transform 1s ease-in-out;
+  background-image: url(../../image/verb/duduk.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+.imagekotakdelapan {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(30, 255, 0);
+  transition: transform 1s ease-in-out;
+  background-image: url(../../image/verb/kirim.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+.imagekotaksembilan {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(30, 255, 0);
+  transition: transform 1s ease-in-out;
+  background-image: url(../../image/verb/lari.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+.imagekotaksepuluh {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(30, 255, 0);
+  transition: transform 1s ease-in-out;
+  background-image: url(../../image/verb/lupa.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+.imagekotaksebelas {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(30, 255, 0);
+  transition: transform 1s ease-in-out;
+  background-image: url(../../image/verb/makan.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+.imagekotakduabelas {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(30, 255, 0);
+  transition: transform 1s ease-in-out;
+  background-image: url(../../image/verb/mandi.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+.imagekotaktigabelas {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(30, 255, 0);
+  transition: transform 1s ease-in-out;
+  background-image: url(../../image/verb/membangun.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+.imagekotakempatbelas {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(30, 255, 0);
+  transition: transform 1s ease-in-out;
+  background-image: url(../../image/verb/menegendarai.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+.imagekotaklimabelas {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(30, 255, 0);
+  transition: transform 1s ease-in-out;
+  background-image: url(../../image/verb/menegerti.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+.imagekotakenambelas {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(30, 255, 0);
+  transition: transform 1s ease-in-out;
+  background-image: url(../../image/verb/mengendarai.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+.imagekotaktujuhbelas {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(30, 255, 0);
+  transition: transform 1s ease-in-out;
+  background-image: url(../../image/verb/menulis.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+.imagekotakdelapanbelas {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(30, 255, 0);
+  transition: transform 1s ease-in-out;
+  background-image: url(../../image/verb/minum.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+.imagekotaksembilanbelas {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(30, 255, 0);
+  transition: transform 1s ease-in-out;
+  background-image: url(../../image/verb/pakai.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+
+.imagekotakduapuluh {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(30, 255, 0);
+  transition: transform 1s ease-in-out;
+  background-image: url(../../image/verb/pulang.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+
+.imagekotak1 h2 {
+  /* line-height: 100px; */
+  text-align: center;
+  margin-top: 50px;
+}
+
+.answer {
+  width: 400px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.choice {
+  width: 190px;
+  height: 28px;
+  border: 1px green solid;
+  background-color: rgb(203, 250, 172);
+  line-height: 28px;
+  text-align: center;
+  margin-right: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* .imagekotak1:hover {
+    transform: rotate(-180deg);
+    transform-origin: top left;
+  } */
+
+/* game 1 end */
+
+/* game 2 start */
+
+.game2 {
+  display: none;
+}
+.gamekotak2 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(8, 145, 15);
+  margin-top: 100px;
+  position: relative;
+}
+
+.imagekotak2 h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.h22 {
+  margin: auto;
+}
+
+.imagekotak2 {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(202, 16, 140);
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  /* background-image: url(image/3.jpg); */
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+.answer2 {
+  width: 400px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.choice2 {
+  width: 190px;
+  height: 28px;
+  border: 1px green solid;
+  background-color: rgb(203, 250, 172);
+  line-height: 28px;
+  text-align: center;
+  margin-right: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* game 2 end */
+
+/* game 3 start */
+.game3 {
+  display: none;
+}
+.gamekotak3 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(8, 42, 153);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h23 {
+  color: antiquewhite;
+  margin: auto;
+}
+
+.imagekotak3 h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.imagekotak3 {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(0, 255, 234);
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  /* background-image: url(image/11.jpg); */
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+.answer3 {
+  width: 400px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.choice3 {
+  width: 190px;
+  height: 28px;
+  border: 1px green solid;
+  background-color: rgb(203, 250, 172);
+  line-height: 28px;
+  text-align: center;
+  margin-right: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* game 3 end */
+
+/* game 4 start */
+.game4 {
+  display: none;
+}
+.gamekotak4 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(15, 197, 9);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h24 {
+  color: antiquewhite;
+  margin: auto;
+  text-align: center;
+  line-height: 400px;
+}
+
+.imagekotak4 h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.imagekotak4 {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(241, 36, 241);
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  /* background-image: url(image/4.jpg); */
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+.answer4 {
+  width: 400px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.choice4 {
+  width: 190px;
+  height: 28px;
+  border: 1px green solid;
+  background-color: rgb(203, 250, 172);
+  line-height: 28px;
+  text-align: center;
+  margin-right: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* game 4 end */
+
+/* game 5 start */
+.game5 {
+  display: none;
+}
+.gamekotak5 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(185, 16, 129);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h25 {
+  color: antiquewhite;
+  margin: auto;
+  text-align: center;
+  line-height: 400px;
+}
+
+.imagekotak5 h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.imagekotak5 {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(255, 0, 200);
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  /* background-image: url(image/5.jpg); */
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+.answer5 {
+  width: 400px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.choice5 {
+  width: 190px;
+  height: 28px;
+  border: 1px green solid;
+  background-color: rgb(203, 250, 172);
+  line-height: 28px;
+  text-align: center;
+  margin-right: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* game 5 end */
+
+/* game 6 start */
+.game6 {
+  display: none;
+}
+.gamekotak6 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(134, 12, 165);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h26 {
+  color: antiquewhite;
+  margin: auto;
+  text-align: center;
+  line-height: 400px;
+}
+
+.imagekotak6 h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.imagekotak6 {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(255, 0, 21);
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  /* background-image: url(image/6.jpg); */
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+.answer6 {
+  width: 400px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.choice6 {
+  width: 190px;
+  height: 28px;
+  border: 1px green solid;
+  background-color: rgb(203, 250, 172);
+  line-height: 28px;
+  text-align: center;
+  margin-right: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* game 6 end */
+
+/* game 7 start */
+.game7 {
+  display: none;
+}
+.gamekotak7 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(233, 93, 13);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h27 {
+  color: antiquewhite;
+  margin: auto;
+  text-align: center;
+  line-height: 400px;
+}
+
+.imagekotak7 h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.imagekotak7 {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(12, 247, 247);
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  /* background-image: url(image/7.jpg); */
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+.answer7 {
+  width: 400px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.choice7 {
+  width: 190px;
+  height: 28px;
+  border: 1px green solid;
+  background-color: rgb(203, 250, 172);
+  line-height: 28px;
+  text-align: center;
+  margin-right: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* game 7 end */
+
+/* game 8 start */
+.game8 {
+  display: none;
+}
+.gamekotak8 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(2, 7, 7);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h28 {
+  color: antiquewhite;
+  margin: auto;
+  text-align: center;
+  line-height: 400px;
+}
+
+.imagekotak8 h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.imagekotak8 {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(208, 255, 0);
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  /* background-image: url(image/8.jpg); */
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+.answer8 {
+  width: 400px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.choice8 {
+  width: 190px;
+  height: 28px;
+  border: 1px green solid;
+  background-color: rgb(203, 250, 172);
+  line-height: 28px;
+  text-align: center;
+  margin-right: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* game 8 end */
+
+/* game 9 start */
+.game9 {
+  display: none;
+}
+.gamekotak9 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(235, 14, 98);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h29 {
+  color: antiquewhite;
+  margin: auto;
+  line-height: 400px;
+  text-align: center;
+}
+
+.imagekotak9 h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.imagekotak9 {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(234, 0, 255);
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  /* background-image: url(image/9.png); */
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+.answer9 {
+  width: 400px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.choice9 {
+  width: 190px;
+  height: 28px;
+  border: 1px green solid;
+  background-color: rgb(203, 250, 172);
+  line-height: 28px;
+  text-align: center;
+  margin-right: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* game 9 end */
+
+/* game 10 start */
+.game10 {
+  display: none;
+}
+.gamekotak10 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(11, 204, 21);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h210 {
+  color: antiquewhite;
+  margin: auto;
+  text-align: center;
+  line-height: 400px;
+}
+
+.imagekotak10 h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.imagekotak10 {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(17, 0, 255);
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  /* background-image: url(image/10.jpg); */
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+.answer10 {
+  width: 400px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.choice10 {
+  width: 190px;
+  height: 28px;
+  border: 1px green solid;
+  background-color: rgb(203, 250, 172);
+  line-height: 28px;
+  text-align: center;
+  margin-right: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* game 10 end */
+
+/* GAME 11 START */
+.game11 {
+  display: none;
+}
+.gamekotak11 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(11, 204, 21);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h211 {
+  color: antiquewhite;
+  margin: auto;
+  text-align: center;
+  line-height: 400px;
+}
+
+.imagekotak11 h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.imagekotak11 {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(17, 0, 255);
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  /* background-image: url(image/10.jpg); */
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+.answer11 {
+  width: 400px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.choice11 {
+  width: 190px;
+  height: 28px;
+  border: 1px green solid;
+  background-color: rgb(203, 250, 172);
+  line-height: 28px;
+  text-align: center;
+  margin-right: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* GAME 11 END */
+
+/* GAME 12 START */
+.game12 {
+  display: none;
+}
+.gamekotak12 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(11, 204, 21);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h212 {
+  color: antiquewhite;
+  margin: auto;
+  text-align: center;
+  line-height: 400px;
+}
+
+.imagekotak12 h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.imagekotak12 {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(17, 0, 255);
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  /* background-image: url(image/10.jpg); */
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+.answer12 {
+  width: 400px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.choice12 {
+  width: 190px;
+  height: 28px;
+  border: 1px green solid;
+  background-color: rgb(203, 250, 172);
+  line-height: 28px;
+  text-align: center;
+  margin-right: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* GAME 12 END */
+
+/* GAME 13 START */
+.game13 {
+  display: none;
+}
+.gamekotak13 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(11, 204, 21);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h213 {
+  color: antiquewhite;
+  margin: auto;
+  text-align: center;
+  line-height: 400px;
+}
+
+.imagekotak13 h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.imagekotak13 {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(17, 0, 255);
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  /* background-image: url(image/10.jpg); */
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+.answer13 {
+  width: 400px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.choice13 {
+  width: 190px;
+  height: 28px;
+  border: 1px green solid;
+  background-color: rgb(203, 250, 172);
+  line-height: 28px;
+  text-align: center;
+  margin-right: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* GAME 13 END */
+
+/* GAME 14 START */
+.game14 {
+  display: none;
+}
+.gamekotak14 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(11, 204, 21);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h214 {
+  color: antiquewhite;
+  margin: auto;
+  text-align: center;
+  line-height: 400px;
+}
+
+.imagekotak14 h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.imagekotak14 {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(17, 0, 255);
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  /* background-image: url(image/10.jpg); */
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+.answer14 {
+  width: 400px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.choice14 {
+  width: 190px;
+  height: 28px;
+  border: 1px green solid;
+  background-color: rgb(203, 250, 172);
+  line-height: 28px;
+  text-align: center;
+  margin-right: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* GAME 14  END */
+
+/* GAME 15 START */
+.game15 {
+  display: none;
+}
+.gamekotak15 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(11, 204, 21);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h215 {
+  color: antiquewhite;
+  margin: auto;
+  text-align: center;
+  line-height: 400px;
+}
+
+.imagekotak15 h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.imagekotak15 {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(17, 0, 255);
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  /* background-image: url(image/10.jpg); */
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+.answer15 {
+  width: 400px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.choice15 {
+  width: 190px;
+  height: 28px;
+  border: 1px green solid;
+  background-color: rgb(203, 250, 172);
+  line-height: 28px;
+  text-align: center;
+  margin-right: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* GAME 15 END */
+
+/* GAME 16 START */
+.game16 {
+  display: none;
+}
+.gamekotak16 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(11, 204, 21);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h216 {
+  color: antiquewhite;
+  margin: auto;
+  text-align: center;
+  line-height: 400px;
+}
+
+.imagekotak16 h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.imagekotak16 {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(17, 0, 255);
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  /* background-image: url(image/10.jpg); */
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+.answer16 {
+  width: 400px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.choice16 {
+  width: 190px;
+  height: 28px;
+  border: 1px green solid;
+  background-color: rgb(203, 250, 172);
+  line-height: 28px;
+  text-align: center;
+  margin-right: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* GAME 16 END */
+
+/* GAME 17 SATRT */
+.game17 {
+  display: none;
+}
+.gamekotak17 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(11, 204, 21);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h217 {
+  color: antiquewhite;
+  margin: auto;
+  text-align: center;
+  line-height: 400px;
+}
+
+.imagekotak17 h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.imagekotak17 {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(17, 0, 255);
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  /* background-image: url(image/10.jpg); */
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+.answer17 {
+  width: 400px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.choice17 {
+  width: 190px;
+  height: 28px;
+  border: 1px green solid;
+  background-color: rgb(203, 250, 172);
+  line-height: 28px;
+  text-align: center;
+  margin-right: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* GAME 17 END */
+
+/* GAME 18 SATRT */
+
+.game18 {
+  display: none;
+}
+.gamekotak18 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(11, 204, 21);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h218 {
+  color: antiquewhite;
+  margin: auto;
+  text-align: center;
+  line-height: 400px;
+}
+
+.imagekotak18 h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.imagekotak18 {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(17, 0, 255);
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  /* background-image: url(image/10.jpg); */
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+.answer18 {
+  width: 400px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.choice18 {
+  width: 190px;
+  height: 28px;
+  border: 1px green solid;
+  background-color: rgb(203, 250, 172);
+  line-height: 28px;
+  text-align: center;
+  margin-right: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* GAME 18 END */
+
+/*  GAME 19 START */
+.game19 {
+  display: none;
+}
+.gamekotak19 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(11, 204, 21);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h219 {
+  color: antiquewhite;
+  margin: auto;
+  text-align: center;
+  line-height: 400px;
+}
+
+.imagekotak19 h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.imagekotak19 {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(17, 0, 255);
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  /* background-image: url(image/10.jpg); */
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+.answer19 {
+  width: 400px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.choice19 {
+  width: 190px;
+  height: 28px;
+  border: 1px green solid;
+  background-color: rgb(203, 250, 172);
+  line-height: 28px;
+  text-align: center;
+  margin-right: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* GAME 19 END */
+
+/* GAME 20 SATRT */
+.game20 {
+  display: none;
+}
+.gamekotak20 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(11, 204, 21);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h220 {
+  color: antiquewhite;
+  margin: auto;
+  text-align: center;
+  line-height: 400px;
+}
+
+.imagekotak20 h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.imagekotak20 {
+  width: 400px;
+  height: 200px;
+  background-color: rgb(17, 0, 255);
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  /* background-image: url(image/10.jpg); */
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+.answer20 {
+  width: 400px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+
+  margin: auto;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.choice20 {
+  width: 190px;
+  height: 28px;
+  border: 1px green solid;
+  background-color: rgb(203, 250, 172);
+  line-height: 28px;
+  text-align: center;
+  margin-right: 6px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* GAME 20 END */
+
+.pop {
+  height: 100px;
+  width: 200px;
+  margin: auto;
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.popup {
+  width: 200px;
+  height: 50px;
+  border: 1px solid red;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(4, 199, 4);
+  animation: popup 0.5s ease-in-out infinite;
+  display: none;
+}
+
+.popup h2 {
+  color: aliceblue;
+  text-align: center;
+  line-height: 50px;
+  margin: auto;
+}
+
+@keyframes popup {
+  from {
+    scale: 1;
+  }
+
+  to {
+    scale: 3;
+  }
+}
+
+.popup2 {
+  width: 200px;
+  height: 60px;
+  border: 1px solid red;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(226, 219, 12);
+  animation: popup2 2s ease-in-out infinite;
+
+  display: none;
+  animation-delay: 1s;
+}
+
+@keyframes popup2 {
+  from {
+    width: 200px;
+  }
+
+  to {
+    width: 200px;
+  }
+}
+
+.popup1 {
+  width: 200px;
+  height: 50px;
+  border: 1px solid red;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(226, 12, 12);
+  animation: popup1 0.5s ease-in-out infinite;
+  color: antiquewhite;
+  display: none;
+}
+
+.popup1 h2 {
+  color: aliceblue;
+  text-align: center;
+  margin: auto;
+  line-height: 50px;
+}
+
+@keyframes popup1 {
+  from {
+    scale: 1;
+  }
+
+  to {
+    scale: 3;
+  }
+}
+
+.petunjuk {
+  position: absolute;
+  display: block;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 20px;
+  width: 400px;
+}
+.petunjuk p {
+  text-align: center;
+  color: rgb(255, 251, 10);
+  font-size: 20px;
+}
+
+.score-container {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 1px solid rgb(214, 198, 198);
+  right: 30px;
+  top: 20px;
+  display: flex;
+  box-shadow: 2px 10px 30px green;
+  background-color: rgb(101, 248, 248);
+}
+.score-container p {
+  margin: auto;
+  text-align: center;
+  font-size: small;
+}
+
+.user-score {
+  font-size: large;
+}
+.end {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: aliceblue;
+  padding-top: 50px;
+  display: none;
+  background-image: url(image/1.gif);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+
+  margin: auto;
+}
+
+.end h1 h2 p {
+  text-align: center;
+}
+.end span {
+  color: rgb(13, 0, 128);
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.end1 {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: aliceblue;
+  padding-top: 50px;
+  display: none;
+
+  margin: auto;
+}
+
+.end1 h1 h2 p {
+  text-align: center;
+}
+.end1 span {
+  color: rgb(235, 4, 24);
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.end a {
+  display: block;
+  width: 200px;
+  height: 30px;
+  border-radius: 9px;
+  background-color: rgb(0, 255, 21);
+  margin: auto;
+  margin-top: 25px;
+  color: rgb(1, 8, 15);
+  line-height: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.end a:hover {
+  background-color: rgb(69, 201, 57);
+}
+
+.end1 a {
+  display: block;
+  width: 200px;
+  height: 30px;
+  border-radius: 9px;
+  background-color: rgb(255, 0, 13);
+  margin: auto;
+  margin-top: 25px;
+  color: aliceblue;
+  line-height: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.end1 a:hover {
+  background-color: rgb(5, 230, 16);
+}
+.game2,
+.game3,
+.game4,
+.game5,
+.game6,
+.game7,
+.game8,
+.game9,
+.game10,
+.game11,
+.game12,
+.game13,
+.game14,
+.game15,
+.game16,
+.game17,
+.game18,
+.game19,
+.game20 {
+  position: absolute;
+  top: 18.5%;
+  left: 50%;
+  transition: 2s;
+  transform: translate(-500%);
+  display: block;
+}
+
+/* MEDI QUERIES */
+
+@media (min-width: 1000px) {
+  .game1,
+  .game2,
+  .game3,
+  .game4,
+  .game5,
+  .game6,
+  .game7,
+  .game8,
+  .game9,
+  .game10,
+  .game11,
+  .game12,
+  .game13,
+  .game14,
+  .game15,
+  .game16,
+  .game17,
+  .game18,
+  .game20 {
+    transition: 2s;
+    margin-top: -80px;
+  }
+
+  input {
+    width: 400px;
+  }
+
+  .petunjuk {
+    width: 400px;
+    margin-top: -80px;
+  }
+
+  .tombol {
+    margin-left: 200px;
+    /* position: absolute; */
+    top: 150px;
+    height: 50px;
+    width: 130px;
+  }
+
+  .score-container {
+    /* position: absolute; */
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 1px solid rgb(214, 198, 198);
+    margin-right: 200px;
+    top: 150px;
+    display: flex;
+    box-shadow: 2px 10px 30px green;
+    background-color: rgb(101, 248, 248);
+  }
+
+  .game1 {
+    margin-top: -30px;
+  }
+
+  .pop {
+    margin-top: -50px;
+  }
+
+  body {
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: yellow;
+        padding: 0;
+        margin: 0;
+        line-height: 1.25;
+      }
+      .judul {
+        text-align: center;
+        margin: 30px auto;
+      }
+      .container-satu {
+        margin: 50px auto;
+        max-width: 1000px;
+      }
+
+      .container-dua {
+        margin: 50px auto;
+        max-width: 1000px;
+      }
+
+      .layanan {
+        padding: 10px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+      }
+
+      .kembali {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: #e4405f;
+        overflow: hidden;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .kembali h3 {
+        font-size: 15px;
+        font-weight: bold;
+        color: aliceblue;
+      }
+
+      /* SLIDE IMAGE START */
+
+      .slider {
+        width: 450px;
+        height: 250px;
+        overflow: hidden;
+        margin: auto;
+      }
+
+      .slides {
+        width: 500%;
+        height: 250px;
+        transition: 3s;
+        display: flex;
+      }
+
+      .slide {
+        width: 20%;
+        height: 250px;
+        transition: 3s;
+      }
+
+      .slides input {
+        display: none;
+      }
+
+      .slide img {
+        width: 450px;
+        height: 250px;
+      }
+
+      .navigation-auto {
+        display: flex;
+        position: absolute;
+        width: 450px;
+        margin-top: 210px;
+        justify-content: center;
+      }
+
+      .navigation-auto div {
+        padding: 5px;
+        border-radius: 50%;
+        border: 2px solid black;
+      }
+
+      .navigation-auto div:not(:last-child) {
+        margin-right: 40px;
+      }
+
+      #radio1:checked ~ .navigation-auto div.auto-btn1 {
+        background-color: red;
+      }
+
+      #radio2:checked ~ .navigation-auto div.auto-btn2 {
+        background-color: red;
+      }
+      #radio3:checked ~ .navigation-auto div.auto-btn3 {
+        background-color: red;
+      }
+      #radio4:checked ~ .navigation-auto div.auto-btn4 {
+        background-color: red;
+      }
+
+      .navigation-manual {
+        display: flex;
+        position: absolute;
+        margin-top: -40px;
+        width: 450px;
+        justify-content: center;
+      }
+
+      .manual-btn {
+        padding: 5px;
+        border-radius: 50%;
+        border: 2px solid blue;
+      }
+
+      .manual-btn:not(:last-child) {
+        margin-right: 40px;
+      }
+
+      .manual-btn:hover {
+        background-color: #e4405f;
+      }
+
+      #radio1:checked ~ .first {
+        margin-left: 0;
+      }
+      #radio2:checked ~ .first {
+        margin-left: -20%;
+      }
+      #radio3:checked ~ .first {
+        margin-left: -40%;
+      }
+      #radio4:checked ~ .first {
+        margin-left: -60%;
+      }
+
+      /* ICON START */
+      .icons {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        margin: auto;
+        justify-content: center;
+        margin-top: 20px;
+        align-items: center;
+        gap: 25px;
+        background-color: #25d366;
+      }
+      .icons .facebook {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      .icons .facebook:hover {
+        transform: translateY(-5px);
+        fill: #00aec7;
+      }
+
+      .icons .instagram {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      .icons .instagram:hover {
+        transform: translateY(-5px);
+        /* background-color: #e4405f; */
+        fill: #e4405f;
+      }
+
+      .icons .twitter {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      .icons .twitter:hover {
+        transform: translateY(-5px);
+        /* background-color: #1d9bf0; */
+        fill: #1d9bf0;
+      }
+
+      .icons .wa {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      .icons .wa:hover {
+        transform: translateY(-5px);
+        fill: #25d366;
+      }
+
+      .icons .youtube {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      .icons .youtube:hover {
+        transform: translateY(-5px);
+        /* background-color: #ff0000; */
+        fill: #ff0000;
+      }
+
+      /* ICON END */
+
+      @media (min-width: 600px) {
+        .container-satu {
+          display: flex;
+          justify-content: space-evenly;
+          box-sizing: border-box;
+        }
+
+        .container-dua {
+          display: flex;
+          justify-content: space-evenly;
+          box-sizing: border-box;
+        }
+
+        .layanan {
+          width: 50%;
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+
+        .slider,
+        .slide img {
+          width: 800px;
+          height: 350px;
+          margin: auto;
+        }
+
+        .navigation-auto {
+          margin-top: 310px;
+          justify-content: center;
+          width: 800px;
+        }
+
+        .navigation-manual {
+          margin-top: 60px;
+          justify-content: center;
+          width: 800px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="judul">RECOUNT TEXT</h2>
+
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+
+        <div class="slide first">
+          <img src="../../image/advanc/slide1.png" alt="" />
+        </div>
+
+        <div class="slide">
+          <img src="../../image/advanc/slide6.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="../../image/advanc/slide3.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="../../image/advanc/slide4.png" alt="" />
+        </div>
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-satu">
+      <div class="layanan satu">
+        <h2>Apa itu Recount Text?</h2>
+        <p>
+          Recount text adalah jenis teks yang menceritakan kembali pengalaman atau kejadian yang telah terjadi di masa lalu. Tujuan utama dari recount text adalah untuk memberikan informasi atau menghibur pembaca dengan cara menceritakan
+          pengalaman atau peristiwa yang dialami oleh penulis atau orang lain. Recount text biasanya ditulis dalam bentuk naratif dan menggunakan past tense (masa lampau).
+        </p>
+        <h4>Ciri-Ciri Recount Text:</h4>
+        <p>1.Tujuan: Untuk menginformasi atau menghibur pembaca atas peristiwa yang dialami atau dilihat pada masa lampau..</p>
+        <p>
+          2.Struktur:
+          <br />- Orientation: Bagian ini memperkenalkan latar belakang cerita, seperti siapa, di mana, dan kapan kejadian terjadi <br />- Events: Bagian ini menceritakan rangkaian peristiwa atau kejadian yang terjadi secara kronologis.
+          <br />- Re-orientation: Bagian ini biasanya menyimpulkan cerita atau memberikan komentar pribadi penulis tentang kejadian tersebut.
+        </p>
+        1.Menggunakan kata hubung (conjunctions) dan kata keterangan waktu (time connectives) untuk menyusun urutan peristiwa
+        <p>3.Bahasa: Menggunakan deskripsi untuk memberikan detail tentang kejadian atau pengalaman..</p>
+        <p>4.Pola kalimat yang digunakan adalah Simple Past tense. Untuk memahami simple Past tense silahkan klik <a href="../../verb/verb5/materi.html">Simple Past Tense</a></p>
+      </div>
+      <div class="layanan dua">
+        <h2>Contoh Recount Text</h2>
+        <h3>My First Trip to Bali</h3>
+
+        Oreientation :<br />
+
+        Last year, during the summer holidays, I had the opportunity to visit Bali for the first time with my family. We were very excited about the trip because we had heard so much about the beautiful beaches and cultural attractions in
+        Bali.
+        <br />
+        Events :<br />
+
+        On the first day, we arrived at Ngurah Rai International Airport in the afternoon. After checking into our hotel, we decided to explore Kuta Beach. The beach was crowded with tourists, but the view of the sunset was absolutely
+        breathtaking. We took many photos and enjoyed the cool sea breeze. The next day, we visited Ubud, a place known for its arts and crafts. We visited the Ubud Monkey Forest and had a lot of fun watching the playful monkeys. We also
+        visited several art galleries and bought some beautiful paintings and handicrafts as souvenirs. On the third day, we went to Tanah Lot, a famous temple located on a rock formation in the sea. The sight of the temple against the
+        backdrop of the ocean was truly mesmerizing. In the evening, we watched a traditional Kecak dance performance, which was a fascinating experience.
+        <br />Re-orientation <br />Our trip to Bali was an unforgettable experience. We not only enjoyed the natural beauty of the island but also learned a lot about Balinese culture and traditions. I hope to visit Bali again someday to
+        explore more of its hidden treasures.
+      </div>
+      <!-- <div class="layanan tiga">
+        <h2>Layanan tiga</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, quisquam? Molestiae vitae at odio, deleniti, voluptatibus minima, illum eum itaque vel sequi quia eligendi beatae ad vero hic ea eos.</p>
+      </div> -->
+    </div>
+
+    <!-- <div class="container-dua">
+      <div class="layanan empat">
+        <h2>layanan empat</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta magni corrupti architecto consequuntur ipsum. Nesciunt accusamus repellat id, provident, eius molestias minima ullam libero esse soluta, impedit magnam! Fuga, illo!
+        </p>
+      </div>
+      <div class="layanan lima">
+        <h2>layanan Lima</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, exercitationem! Voluptate, inventore. Aliquam nulla alias recusandae maiores magnam perferendis dignissimos. Architecto maxime rerum nemo qui officia amet iusto harum
+          consectetur.
+        </p>
+      </div>
+      <div class="layanan enam">
+        <h2>Layanan enam</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, quisquam? Molestiae vitae at odio, deleniti, voluptatibus minima, illum eum itaque vel sequi quia eligendi beatae ad vero hic ea eos.</p>
+      </div>
+    </div> -->
+
+    <!-- ICON  START-->
+    <div class="icons">
+      <a href="https://www.facebook.com/mhamri.spding" target="_blank">
+        <svg role="img" class="facebook" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <title>Facebook</title>
+          <path
+            d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"
+          /></svg
+      ></a>
+
+      <a href=""
+        ><svg role="img" class="instagram" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <title>Instagram</title>
+          <path
+            d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+          /></svg
+      ></a>
+
+      <a href="https://wa.link/nlzkhg" target="_blank"
+        ><svg role="img" class="wa" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <title>WhatsApp</title>
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+          /></svg
+      ></a>
+
+      <a herf=""
+        ><svg role="img" class="twitter" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <title>Twitter</title>
+          <path
+            d="M21.543 7.104c.015.211.015.423.015.636 0 6.507-4.954 14.01-14.01 14.01v-.003A13.94 13.94 0 0 1 0 19.539a9.88 9.88 0 0 0 7.287-2.041 4.93 4.93 0 0 1-4.6-3.42 4.916 4.916 0 0 0 2.223-.084A4.926 4.926 0 0 1 .96 9.167v-.062a4.887 4.887 0 0 0 2.235.616A4.928 4.928 0 0 1 1.67 3.148 13.98 13.98 0 0 0 11.82 8.292a4.929 4.929 0 0 1 8.39-4.49 9.868 9.868 0 0 0 3.128-1.196 4.941 4.941 0 0 1-2.165 2.724A9.828 9.828 0 0 0 24 4.555a10.019 10.019 0 0 1-2.457 2.549z"
+          /></svg
+      ></a>
+
+      <a href="https://www.youtube.com/@muhammadhamri1085" target="_blank"
+        ><svg role="img" class="youtube" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <title>YouTube</title>
+          <path
+            d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+          /></svg
+      ></a>
+    </div>
+
+    <!-- ICON END -->
+
+    <div class="kembali">
+      <a href="index.html"> <h3>back to game</h3></a>
+    </div>
+
+    <script>
+      var counter = 1;
+      var increasing = true;
+      setInterval(function () {
+        document.getElementById("radio" + counter).checked = true;
+        if (increasing) {
+          counter++;
+          if (counter > 4) {
+            counter = 3;
+            increasing = false;
+          }
+        } else {
+          counter--;
+          if (counter < 1) {
+            counter = 2;
+            increasing = true;
+          }
+        }
+      }, 3000);
+    </script>
+  </body>
+</html>

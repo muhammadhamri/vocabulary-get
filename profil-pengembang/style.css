@@ -1,0 +1,110 @@
+body {
+  background-color: rgb(241, 241, 97);
+}
+h1 {
+  text-align: center;
+}
+.profil {
+  width: 500px;
+  /* height: 100vh; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.profil img {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+.profil p {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.icons {
+  display: flex;
+  width: 500px;
+  height: 60px;
+  margin: auto;
+  justify-content: center;
+
+  margin-top: 20px;
+  gap: 25px;
+}
+.icons .facebook {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.icons .facebook:hover {
+  transform: translateY(-5px);
+  fill: #00aec7;
+}
+
+.icons .instagram {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.icons .instagram:hover {
+  transform: translateY(-5px);
+  /* background-color: #e4405f; */
+  fill: #e4405f;
+}
+
+.icons .twitter {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.icons .twitter:hover {
+  transform: translateY(-5px);
+  /* background-color: #1d9bf0; */
+  fill: #1d9bf0;
+}
+
+.icons .wa {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.icons .wa:hover {
+  transform: translateY(-5px);
+  fill: #25d366;
+}
+
+.icons .youtube {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.icons .youtube:hover {
+  transform: translateY(-5px);
+  /* background-color: #ff0000; */
+  fill: #ff0000;
+}
+
+.kembali {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #e4405f;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+}
+
+.kembali h3 {
+  font-size: 15px;
+  font-weight: bold;
+  color: aliceblue;
+}

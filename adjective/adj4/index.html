@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ocupation</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body">
+
+  <div class="aplause">
+  </div>
+
+  <div class="kecewa">
+  </div>
+
+  <audio class="soundefect-benar">
+    <source src="../../sound/aplause.mp3">
+  </audio>
+  <audio class="soundefect-salah">
+    <source src="../../sound/salah.mp3">
+  </audio>
+
+  <audio class="backsound" loop >
+    <source src="../../sound/song1.mp3">
+  </audio>
+
+  <div class="end">
+    <h1>Congratulation</h1>
+    <p>You have reached the required score to play on <P></P><span>level Five</span></p></h3>
+    <p>"Tidak ada batas untuk menuntut ilmu. Semakin banyak kita belajar, semakin luas pandangan kita terhadap dunia."</p>
+    <p>"Pendidikan bukanlah beban, melainkan investasi terbaik untuk masa depan. Semakin tinggi investasi, semakin besar hasilnya."</p><p>"Pohon besar bermula dari biji kecil, begitu pula ilmu yang diperoleh dari langkah-langkah kecil menuju kesempurnaan." </p>
+
+    <div class="next-level"><a href="../adj5/index.html">NEXT LEVEL</a></div>
+
+  </div>
+
+  <div class="end1">
+    <h1>Mohon maaf anda gagal</h1>
+    <p>You do not reached the required score  <P></P><span>SCORE ANDA TIDAK CUKUP UNTUK MELANJUTKAN KE LEVEL BERIKUTNYA.</span></p></h3>
+    <p>"Tidak ada batas untuk menuntut ilmu. Semakin banyak kita belajar, semakin luas pandangan kita terhadap dunia."</p>
+    <p>"Pendidikan bukanlah beban, melainkan investasi terbaik untuk masa depan. Semakin tinggi investasi, semakin besar hasilnya."</p><p>"Pohon besar bermula dari biji kecil, begitu pula ilmu yang diperoleh dari langkah-langkah kecil menuju kesempurnaan." </p>
+
+    <p><a href="index.html" target="_blank">PLAY AGAIN</a></p>
+
+  </div>
+
+  
+    <div class="game-container">
+      <div class="pop">
+        <div class="popup">
+          <h2>good job</h2>
+        </div>
+    
+        <div class="popup1">
+          <h2>Try again</h2>
+        </div>
+    
+        <div class="popup2">
+          <p>write your answer!</p>
+        </div>
+      </div>
+      <div class="tombol">
+         <div class="profil" ><a href="materi.html" target="_blank">MATERI</a></div>
+      </div>
+
+      <div class="score-container">
+        <p> Your Score: <span class="user-score">0</span></p>
+      </div>
+
+     
+      
+      <div class="petunjuk"><p>KATA SIFAT (ADJECTIVE)<br>Tulislah Bahasa Inggris dari Kata Sifat di bawah ini</p></div>
+     
+      <div class="game1">
+      <div class="gamekotak1">
+        <h2 class="h21">EXPENSIVE</h2>
+          <div class="imagekotak1"></div>
+          <div class="textkotak1"><h2>MAHAL</h2></div>
+      </div>
+      <form action="">
+        <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input1" oninput="checkInputGame1(this.value)" />
+      </form>
+      <button class="button1" type="button" onclick="handleButtonClick()">kirim</button>
+      </div>
+
+      <div class="game2">
+        <div class="gamekotak2">
+          <h2 class="h22">EASY</h2>
+            <div class="imagekotak2"></div>
+            <div class="textkotak2"><h2>MUDAH</h2></div>
+        </div>
+        <form action="">
+          <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input2" oninput="checkInputGame2(this.value)" />
+        </form>
+        <button class="button2" type="button" onclick="handleButtonClick()">kirim</button>
+        </div>
+
+        <div class="game3">
+          <div class="gamekotak3">
+            <h2 class="h23">DILIGENT</h2>
+              <div class="imagekotak3"></div>
+              <div class="textkotak3"><h2>RAJIN</h2></div>
+          </div>
+          <form action="">
+            <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input3" oninput="checkInputGame3(this.value)" />
+          </form>
+          <button class="button3" type="button" onclick="handleButtonClick()">kirim</button>
+          </div>
+
+          <div class="game4">
+            <div class="gamekotak4">
+              <h2 class="h24">CHEAP</h2>
+                <div class="imagekotak4"></div>
+                <div class="textkotak4"><h2>MURAH</h2></div>
+            </div>
+            <form action="">
+              <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input4" oninput="checkInputGame4(this.value)" />
+            </form>
+            <button class="button4" type="button" onclick="handleButtonClick()">kirim</button>
+            </div>
+
+            <div class="game5">
+              <div class="gamekotak5">
+                <h2 class="h25">HUNGRY</h2>
+                  <div class="imagekotak5"> </div>
+                  <div class="textkotak5"><h2>LAPAR</h2></div>
+              </div>
+              <form action="">
+                <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input5" oninput="checkInputGame5(this.value)" />
+              </form>
+              <button class="button5" type="button" onclick="handleButtonClick()">kirim</button>
+              </div>
+
+              <div class="game6">
+                <div class="gamekotak6">
+                  <h2 class="h26">EMPTY</h2>
+                    <div class="imagekotak6"> </div>
+                    <div class="textkotak6"><h2>KOSONG</h2></div>
+                </div>
+                <form action="">
+                  <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input6" oninput="checkInputGame6(this.value)" />
+                </form>
+                <button class="button6" type="button" onclick="handleButtonClick()">kirim</button>
+                </div>
+
+                <div class="game7">
+                  <div class="gamekotak7">
+                    <h2 class="h27">BORING</h2>
+                      <div class="imagekotak7"></div>
+                      <div class="textkotak7"><h2>MEMBOSANKAN</h2></div>
+                  </div>
+                  <form action="">
+                    <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input7" oninput="checkInputGame7(this.value)" />
+                  </form>
+                  <button class="button7" type="button" onclick="handleButtonClick()">kirim</button>
+                  </div>
+
+                  <div class="game8">
+                    <div class="gamekotak8">
+                      <h2 class="h28">INTERESTING</h2>
+                        <div class="imagekotak8"></div>
+                        <div class="textkotak8"><h2>MENARIK</h2></div>
+                    </div>
+                    <form action="">
+                      <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input8" oninput="checkInputGame8(this.value)" />
+                    </form>
+                    <button class="button1" type="button" onclick="handleButtonClick()">kirim</button>
+                    </div>
+
+                    <div class="game9">
+                      <div class="gamekotak9">
+                        <h2 class="h29">DIFFICULT</h2>
+                          <div class="imagekotak9"></div>
+                          <div class="textkotak9"><h2>SULIT</h2></div>
+                      </div>
+                      <form action="">
+                        <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input9" oninput="checkInputGame9(this.value)" />
+                      </form>
+                      <button class="button9" type="button" onclick="handleButtonClick()">kirim</button>
+                      </div>
+
+                      <div class="game10">
+                        <div class="gamekotak10">
+                          <h2 class="h210">NEAR</h2>
+                            <div class="imagekotak10"></div>
+                            <div class="textkotak10"><h2>DEKAT</h2></div>
+                        </div>
+                        <form action="">
+                          <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input10" oninput="checkInputGame10(this.value)" />
+                        </form>
+                        <button class="button10" type="button" onclick="handleButtonClick()">kirim</button>
+                        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

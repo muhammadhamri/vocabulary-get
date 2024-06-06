@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VERB 10</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="pop">
+      <div class="popup">
+        <h2>Good Job</h2>
+      </div>
+  
+      <div class="popup1">
+        <h2>Try again</h2>
+      </div>
+  
+      <div class="popup2">
+        <p>write your answer!</p>
+      </div>
+    </div>
+
+    
+
+    <div class="tombol-materi">
+      <div class="materi" ><a href="materi.html" target="_blank">MATERI</a></div>
+   </div>
+
+    
+  
+    <div class="bintang">
+    </div>
+  
+    <div class="semangka">
+    </div>
+
+    <div class="end">
+      <h1>Congratulation</h1>
+      <p>You have reached the required score to play on <P></P><span>level two</span></p></h3>
+      <p>"Tidak ada batas untuk menuntut ilmu. Semakin banyak kita belajar, semakin luas pandangan kita terhadap dunia."</p>
+      <p>"Pendidikan bukanlah beban, melainkan investasi terbaik untuk masa depan. Semakin tinggi investasi, semakin besar hasilnya."</p><p>"Pohon besar bermula dari biji kecil, begitu pula ilmu yang diperoleh dari langkah-langkah kecil menuju kesempurnaan." </p>
+  
+      <div class="next-level"><a href="../flipcard-verb3/index.html">NEXT LEVEL</a></div>
+  
+    </div>
+
+
+    <div class="end1">
+      <h1>Mohon maaf anda gagal</h1>
+      <p>You do not reached the required score  <P></P><span>SCORE ANDA TIDAK CUKUP UNTUK MELANJUTKAN KE LEVEL BERIKUTNYA.</span></p></h3>
+      <p>"Tidak ada batas untuk menuntut ilmu. Semakin banyak kita belajar, semakin luas pandangan kita terhadap dunia."</p>
+      <p>"Pendidikan bukanlah beban, melainkan investasi terbaik untuk masa depan. Semakin tinggi investasi, semakin besar hasilnya."</p><p>"Pohon besar bermula dari biji kecil, begitu pula ilmu yang diperoleh dari langkah-langkah kecil menuju kesempurnaan." </p>
+  
+      <p><a href="index.html" target="_blank">PLAY AGAIN</a></p>
+  
+    </div>
+  
+
+
+    <div class="respon1">
+      <div class="betul">
+        <img src="image/betul.png" alt="" />
+      </div>
+    </div>
+    <div class="respon2">
+      <div class="salah">
+        <img src="image/salah.png" alt="" />
+      </div>
+    </div>
+
+    <audio class="benar-soundefect soundefect">
+      <source src="../../sound/benar.mp3" />
+    </audio>
+    <audio class="salah-soundefect soundefect">
+      <source src="../../sound/salah.mp3" />
+    </audio>
+
+
+    <audio class="backsound" loop>
+      <source src="../../sound/song1.mp3">
+    </audio>
+    
+    <h1 class="petunjuk">KATA KERJA (VERB)</h1>
+    <div class="score-container">
+      <p>Score: <span class="user-score">0</span></p>
+    </div>
+    <center>
+      <div class="container">
+      <div class="card1">
+        <div class="flipcard1">
+          <div class="flipcard-front1">
+            <h1 class="tanya1">BERKELAHI</h1>
+            <img src="../../image/verb/berkelahi.png" alt="" width="400px" height="400px">
+          </div>
+          <div class="flipcard-back1">
+            <h2 class="jawab1">FIGHT</h2>
+            
+          </div>
+        </div>
+
+        <form action="">
+          <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input1" oninput="checkInputGame1(this.value)" />
+        </form>
+        <button class="button1" type="button" onclick="handleButtonClickGame1()">kirim</button>
+       
+      </div>
+
+      <div class="card2">
+        <div class="flipcard2">
+          <div class="flipcard-front2">
+            <h1 class="tanya2">BERPIKIR</h1>
+            <img src="../../image/verb/berpikir.png" alt="" width="400px" height="400px">
+          </div>
+          <div class="flipcard-back2">
+            <h1 class="jawab2">THINK</h1>
+          </div>
+        </div>
+        <form action="">
+          <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input2" oninput="checkInputGame2(this.value)" />
+        </form>
+        <button class="button2" type="button" onclick="handleButtonClickGame2()">kirim</button>
+      </div>
+
+      <div class="card3">
+        <div class="flipcard3">
+          <div class="flipcard-front3">
+            <h1 class="tanya3">BERSEMBUNYI</h1>
+            <img src="../../image/verb/bersembunyi.png" alt="" width="400px" height="400px">
+          </div>
+          <div class="flipcard-back3">
+            <h1 class="jawab3">HIDE</h1>
+          </div>
+        </div>
+        <form action="">
+          <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input3" oninput="checkInputGame3(this.value)" />
+        </form>
+        <button class="button3" type="button" onclick="handleButtonClickGame3()">kirim</button>
+      </div>
+
+
+      <div class="card4">
+        <div class="flipcard4">
+          <div class="flipcard-front4">
+            <h1 class="tanya4">BERTARUH</h1>
+            <img src="../../image/verb/bertaruh.png" alt="" width="400px" height="400px">
+          </div>
+          <div class="flipcard-back4">
+            <h1 class="jawab4">BET</h1>
+          </div>
+        </div>
+        <form action="">
+          <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input4" oninput="checkInputGame4(this.value)" />
+        </form>
+        <button class="button4" type="button" onclick="handleButtonClickGame4()">kirim</button>
+      </div>
+
+      <div class="card5">
+        <div class="flipcard5">
+          <div class="flipcard-front5">
+            <h1 class="tanya5">KALAH</h1>
+            <img src="../../image/verb/kalah.png" alt="" width="400px" height="400px">
+          </div>
+          <div class="flipcard-back5">
+            <h1 class="jawab5">LOSE</h1>
+          </div>
+        </div>
+        <form action="">
+          <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input5" oninput="checkInputGame5(this.value)" />
+        </form>
+        <button class="button5" type="button" onclick="handleButtonClickGame5()">kirim</button>
+      </div>
+
+      <div class="card6">
+        <div class="flipcard6">
+          <div class="flipcard-front6">
+            <h1 class="tanya6">MELAHIRKAN</h1>
+            <img src="../../image/verb/melahir.png" alt="" width="400px" height="400px">
+          </div>
+          <div class="flipcard-back4">
+            <h1 class="jawab6">BEAR</h1>
+          </div>
+        </div>
+        <form action="">
+          <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input6" oninput="checkInputGame6(this.value)" />
+        </form>
+        <button class="button6" type="button" onclick="handleButtonClickGame6()">kirim</button>
+      </div>
+
+      <div class="card7">
+        <div class="flipcard7">
+          <div class="flipcard-front7">
+            <h1 class="tanya7">MELARANG</h1>
+            <img src="../../image/verb/melarang.png" alt="" width="400px" height="400px">
+          </div>
+          <div class="flipcard-back7">
+            <h1 class="jawab7">FORBID</h1>
+          </div>
+        </div>
+        <form action="">
+          <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input7" oninput="checkInputGame7(this.value)" />
+        </form>
+        <button class="button7" type="button" onclick="handleButtonClickGame7()">kirim</button>
+      </div>
+
+      <div class="card8">
+        <div class="flipcard8">
+          <div class="flipcard-front8">
+            <h1 class="tanya8">MELEMPARKAN</h1>
+            <img src="../../image/verb/melempar.png" alt="" width="400px" height="400px">
+          </div>
+          <div class="flipcard-back8">
+            <h1 class="jawab8">THROW</h1>
+          </div>
+        </div>
+        <form action="">
+          <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input8" oninput="checkInputGame8(this.value)" />
+        </form>
+        <button class="button8" type="button" onclick="handleButtonClickGame8()">kirim</button>
+      </div>
+
+      <div class="card9">
+        <div class="flipcard9">
+          <div class="flipcard-front9">
+            <h1 class="tanya9">MEMAAFKAN</h1>
+            <img src="../../image/verb/memaafkan.png" alt="" width="400px" height="400px">
+          </div>
+          <div class="flipcard-back9">
+            <h1 class="jawab9">FORGIVE</h1>
+          </div>
+        </div>
+        <form action="">
+          <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input9" oninput="checkInputGame9(this.value)" />
+        </form>
+        <button class="button9" type="button" onclick="handleButtonClickGame9()">kirim</button>
+      </div>
+
+      <div class="card10">
+        <div class="flipcard10">
+          <div class="flipcard-front10">
+            <h1 class="tanya10">MEMBIARKAN</h1>
+            <img src="../../image/verb/membiarkan.png" alt="" width="400px" height="400px">
+          </div>
+          <div class="flipcard-back10">
+            <h1 class="jawab10">LET</h1>
+          </div>
+        </div>
+        <form action="">
+          <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input10" oninput="checkInputGame10(this.value)" />
+        </form>
+        <button class="button10" type="button" onclick="handleButtonClickGame10()">kirim</button>
+      </div>
+
+      <div class="card11">
+        <div class="flipcard11">
+          <div class="flipcard-front11">
+            <h1 class="tanya11">MEMILIH</h1>
+            <img src="../../image/verb/memilih.png" alt="" width="400px" height="400px">
+          </div>
+          <div class="flipcard-back11">
+            <h1 class="jawab11">CHOOSE</h1>
+          </div>
+        </div>
+        <form action="">
+          <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input11" oninput="checkInputGame11(this.value)" />
+        </form>
+        <button class="button11" type="button" onclick="handleButtonClickGame11()">kirim</button>
+      </div>
+
+      <div class="card12">
+        <div class="flipcard12">
+          <div class="flipcard-front12">
+            <h1 class="tanya12">MEMIMPIN</h1>
+            <img src="../../image/verb/memimpin.png" alt="" width="400px" height="400px">
+          </div>
+          <div class="flipcard-back12">
+            <h1 class="jawab12">LEAD</h1>
+          </div>
+        </div>
+        <form action="">
+          <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input12" oninput="checkInputGame12(this.value)" />
+        </form>
+        <button class="button12" type="button" onclick="handleButtonClickGame12()">kirim</button>
+      </div>
+
+      <div class="card13">
+        <div class="flipcard13">
+          <div class="flipcard-front13">
+            <h1 class="tanya13">MEMINJAMKAN</h1>
+            <img src="../../image/verb/meminjamkan.png" alt="" width="400px" height="400px">
+          </div>
+          <div class="flipcard-back13">
+            <h1 class="jawab13">LEND</h1>
+          </div>
+        </div>
+        <form action="">
+          <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input13" oninput="checkInputGame13(this.value)" />
+        </form>
+        <button class="button13" type="button" onclick="handleButtonClickGame13()">kirim</button>
+      </div>
+
+      <div class="card14">
+        <div class="flipcard14">
+          <div class="flipcard-front14">
+            <h1 class="tanya14">MEMPERLIHATKAN</h1>
+            <img src="../../image/verb/memperlihatkan.png" alt="" width="400px" height="400px">
+          </div>
+          <div class="flipcard-back14">
+            <h1 class="jawab14">SHOW</h1>
+          </div>
+        </div>
+        <form action="">
+          <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input14" oninput="checkInputGame14(this.value)" />
+        </form>
+        <button class="button14" type="button" onclick="handleButtonClickGame14()">kirim</button>
+      </div>
+
+      <div class="card15">
+        <div class="flipcard15">
+          <div class="flipcard-front15">
+            <h1 class="tanya15">MENANG</h1>
+            <img src="../../image/verb/menang.png" alt="" width="400px" height="400px">
+          </div>
+          <div class="flipcard-back15">
+            <h1 class="jawab15">WIN</h1>
+          </div>
+        </div>
+        <form action="">
+          <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input15" oninput="checkInputGame15(this.value)" />
+        </form>
+        <button class="button15" type="button" onclick="handleButtonClickGame15()">kirim</button>
+      </div>
+
+      <div class="card16">
+        <div class="flipcard16">
+          <div class="flipcard-front16">
+            <h1 class="tanya16">MEMPEROLEH</h1>
+            <img src="../../image/verb/mendapat.png" alt="" width="400px" height="400px">
+          </div>
+          <div class="flipcard-back16">
+            <h1 class="jawab16">GET</h1>
+          </div>
+        </div>
+        <form action="">
+          <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input16" oninput="checkInputGame16(this.value)" />
+        </form>
+        <button class="button16" type="button" onclick="handleButtonClickGame16()">kirim</button>
+      </div>
+
+      <div class="card17">
+        <div class="flipcard17">
+          <div class="flipcard-front17">
+            <h1 class="tanya17">MENGHABISKAN</h1>
+            <img src="../../image/verb/menghabiskan.png" alt="" width="400px" height="400px">
+          </div>
+          <div class="flipcard-back17">
+            <h1 class="jawab17">SPEND</h1>
+          </div>
+        </div>
+        <form action="">
+          <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input17" oninput="checkInputGame17(this.value)" />
+        </form>
+        <button class="button17" type="button" onclick="handleButtonClickGame17()">kirim</button>
+      </div>
+
+      <div class="card18">
+        <div class="flipcard18">
+          <div class="flipcard-front18">
+            <h1 class="tanya18">MENYIMPAN</h1>
+            <img src="../../image/verb/menyimpan.png" alt="" width="400px" height="400px">
+          </div>
+          <div class="flipcard-back18">
+            <h1 class="jawab18">KEEP</h1>
+          </div>
+        </div>
+        <form action="">
+          <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input18" oninput="checkInputGame18(this.value)" />
+        </form>
+        <button class="button18" type="button" onclick="handleButtonClickGame18()">kirim</button>
+      </div>
+
+      <div class="card19">
+        <div class="flipcard19">
+          <div class="flipcard-front19">
+            <h1 class="tanya19">TENGGELAM</h1>
+            <img src="../../image/verb/tenggelam.png" alt="" width="400px" height="400px">
+          </div>
+          <div class="flipcard-back19">
+            <h1 class="jawab19">SINK</h1>
+          </div>
+        </div>
+        <form action="">
+          <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input19" oninput="checkInputGame19(this.value)" />
+        </form>
+        <button class="button19" type="button" onclick="handleButtonClickGame19()">kirim</button>
+      </div>
+
+      <div class="card20">
+        <div class="flipcard20">
+          <div class="flipcard-front20">
+            <h1 class="tanya20">TUMBUH</h1>
+            <img src="../../image/verb/tumbuh.png" alt="" width="400px" height="400px">
+          </div>
+          <div class="flipcard-back20">
+            <h1 class="jawab20">GROW</h1>
+          </div>
+        </div>
+        <form action="">
+          <input autocomplete="off" type="text"  placeholder="Write your Answer here!" class="input20" oninput="checkInputGame20(this.value)" />
+        </form>
+        <button class="button20" type="button" onclick="handleButtonClickGame20()">kirim</button>
+      </div>
+    </center>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>

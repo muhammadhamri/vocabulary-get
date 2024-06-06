@@ -1,0 +1,937 @@
+body {
+  background-color: rgb(245, 245, 59);
+  /* overflow-y: hidden; */
+  width: 100%;
+  height: 100vh;
+}
+
+.game-container {
+  margin-top: 200px;
+  /* display: none; */
+}
+.tombol {
+  margin-left: 25px;
+  position: absolute;
+  top: 30px;
+  height: 50px;
+  width: 130px;
+  border-radius: 8px;
+  display: flex;
+  background-color: aliceblue;
+  animation: tombol 2s ease-in-out infinite;
+}
+
+@keyframes tombol {
+  0% {
+    background-image: linear-gradient(green, purple);
+  }
+
+  25% {
+    background-image: linear-gradient(yellow, rgb(0, 7, 100));
+  }
+
+  50% {
+    background-image: linear-gradient(rgb(241, 145, 145), rgb(61, 61, 218));
+  }
+  75% {
+    background-image: linear-gradient(grey, rgb(233, 11, 48));
+  }
+
+  100% {
+    background-image: linear-gradient(rgb(250, 114, 148), rgb(12, 245, 226));
+  }
+}
+
+.profil {
+  text-align: center;
+  margin: auto;
+}
+.profil a {
+  text-decoration: none;
+  color: rgb(243, 233, 233);
+}
+
+.tombol:hover {
+  transform: scale(1.2);
+}
+/* game 1 start */
+
+.game1 {
+  /* display: none; */
+  transition: 2s;
+}
+.gamekotak1 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(2, 7, 7);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h21 {
+  color: antiquewhite;
+  margin: auto;
+}
+
+.imagekotak1 {
+  width: 400px;
+  height: 400px;
+  background-color: aqua;
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  background-image: url(../../image/noun/carrot.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  /* transform: rotate(-180deg);
+    transform-origin: top left; */
+}
+
+/* .imagekotak1:hover {
+    transform: rotate(-180deg);
+    transform-origin: top left;
+  } */
+
+/* game 1 end */
+
+/* game 2 start */
+
+.game2 {
+  display: none;
+}
+.gamekotak2 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(2, 7, 7);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h22 {
+  color: antiquewhite;
+  margin: auto;
+}
+
+.imagekotak2 {
+  width: 400px;
+  height: 400px;
+  background-color: aqua;
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  background-image: url(../../image/noun/eggplant.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+/* .imagekotak2:hover {
+    transform: rotate(-180deg);
+    transform-origin: top left;
+  } */
+/* game 2 end */
+
+/* game 3 start */
+.game3 {
+  display: none;
+}
+.gamekotak3 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(2, 7, 7);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h23 {
+  color: antiquewhite;
+  margin: auto;
+}
+
+.imagekotak3 {
+  width: 400px;
+  height: 400px;
+  background-color: aqua;
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  background-image: url(../../image/noun/potato.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+/* .imagekotak3:hover {
+    transform: rotate(-180deg);
+    transform-origin: top left;
+  } */
+/* game 3 end */
+
+/* game 4 start */
+.game4 {
+  display: none;
+}
+.gamekotak4 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(2, 7, 7);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h24 {
+  color: antiquewhite;
+  margin: auto;
+}
+
+.imagekotak4 {
+  width: 400px;
+  height: 400px;
+  background-color: aqua;
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  background-image: url(../../image/noun/celeri.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+/* .imagekotak4:hover {
+    transform: rotate(-180deg);
+    transform-origin: top left;
+  } */
+/* game 4 end */
+
+/* game 5 start */
+.game5 {
+  display: none;
+}
+.gamekotak5 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(2, 7, 7);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h25 {
+  color: antiquewhite;
+  margin: auto;
+}
+
+.imagekotak5 {
+  width: 400px;
+  height: 400px;
+  background-color: aqua;
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  background-image: url(../../image/noun/biitermelon.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+/* .imagekotak5:hover {
+    transform: rotate(-180deg);
+    transform-origin: top left;
+  } */
+/* game 5 end */
+
+/* game 6 start */
+.game6 {
+  display: none;
+}
+.gamekotak6 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(2, 7, 7);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h26 {
+  color: antiquewhite;
+  margin: auto;
+}
+
+.imagekotak6 {
+  width: 400px;
+  height: 400px;
+  background-color: aqua;
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  background-image: url(../../image/noun/paprica.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+/* .imagekotak6:hover {
+    transform: rotate(-180deg);
+    transform-origin: top left;
+  } */
+/* game 6 end */
+
+/* game 7 start */
+.game7 {
+  display: none;
+}
+.gamekotak7 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(2, 7, 7);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h27 {
+  color: antiquewhite;
+  margin: auto;
+}
+
+.imagekotak7 {
+  width: 400px;
+  height: 400px;
+  background-color: aqua;
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  background-image: url(../../image/noun/tomato.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+/* .imagekotak7:hover {
+    transform: rotate(-180deg);
+    transform-origin: top left;
+  } */
+/* game 7 end */
+
+/* game 8 start */
+.game8 {
+  display: none;
+}
+.gamekotak8 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(2, 7, 7);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h28 {
+  color: antiquewhite;
+  margin: auto;
+}
+
+.imagekotak8 {
+  width: 400px;
+  height: 400px;
+  background-color: aqua;
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  background-image: url(../../image/noun/leeks.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+/* .imagekotak8:hover {
+    transform: rotate(-180deg);
+    transform-origin: top left;
+  } */
+/* game 8 end */
+
+/* game 9 start */
+.game9 {
+  display: none;
+}
+.gamekotak9 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(2, 7, 7);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h29 {
+  color: antiquewhite;
+  margin: auto;
+}
+
+.imagekotak9 {
+  width: 400px;
+  height: 400px;
+  background-color: aqua;
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  background-image: url(../../image/noun/chayote.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+/* .imagekotak9:hover {
+    transform: rotate(-180deg);
+    transform-origin: top left;
+  } */
+/* game 9 end */
+
+/* game 10 start */
+.game10 {
+  display: none;
+}
+.gamekotak10 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(2, 7, 7);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h210 {
+  color: antiquewhite;
+  margin: auto;
+}
+
+.imagekotak10 {
+  width: 400px;
+  height: 400px;
+  background-color: aqua;
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  background-image: url(../../image/noun/turmeric.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+/* .imagekotak10:hover {
+    transform: rotate(-180deg);
+    transform-origin: top left;
+  } */
+/* game 10 end */
+
+/* GAME 11 START */
+.game11 {
+  display: none;
+}
+.gamekotak11 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(2, 7, 7);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h211 {
+  color: antiquewhite;
+  margin: auto;
+}
+
+.imagekotak11 {
+  width: 400px;
+  height: 400px;
+  background-color: aqua;
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  background-image: url(../../image/noun/cabage.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+/* GAME 11 END */
+
+/* GAME 12 START */
+.game12 {
+  display: none;
+}
+.gamekotak12 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(2, 7, 7);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h212 {
+  color: antiquewhite;
+  margin: auto;
+}
+
+.imagekotak12 {
+  width: 400px;
+  height: 400px;
+  background-color: aqua;
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  background-image: url(../../image/noun/chili.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+/* GAME 12 END */
+
+/* GAME 13 START */
+.game13 {
+  display: none;
+}
+.gamekotak13 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(2, 7, 7);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h213 {
+  color: antiquewhite;
+  margin: auto;
+}
+
+.imagekotak13 {
+  width: 400px;
+  height: 400px;
+  background-color: aqua;
+  transition: transform 1s ease-in-out;
+  transform-origin: top left;
+  background-image: url(../../image/noun/longbean.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+/* GAME 13 END */
+
+.pop {
+  height: 100px;
+  width: 200px;
+  margin: auto;
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.popup {
+  width: 150px;
+  height: 50px;
+  border: 1px solid red;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(54, 211, 37);
+  animation: popup1 2s ease-in-out infinite;
+  display: none;
+}
+
+@keyframes popup1 {
+  from {
+    scale: 1;
+  }
+
+  to {
+    scale: 2;
+  }
+}
+
+.popup2 {
+  width: 150px;
+  height: 60px;
+  border: 1px solid red;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(226, 219, 12);
+  animation: popup2 2s ease-in-out infinite;
+  color: rgb(21, 12, 0);
+  display: none;
+  animation-delay: 1s;
+}
+
+@keyframes popup2 {
+  from {
+    scale: 1;
+  }
+
+  to {
+    scale: 2;
+  }
+}
+
+.popup1 {
+  width: 150px;
+  height: 40px;
+  border: 1px solid red;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(226, 12, 12);
+  animation: popup1 0.5s ease-in-out infinite;
+  color: antiquewhite;
+  display: none;
+  animation-delay: 1s;
+}
+
+@keyframes popup1 {
+  from {
+    scale: 1;
+  }
+
+  to {
+    scale: 2;
+  }
+}
+
+input {
+  margin: auto;
+  display: block;
+  width: 393px;
+  margin-top: 6px;
+  padding: 5px;
+  border: 1px solid rgb(128, 0, 100);
+  border-radius: 10px;
+  text-align: center;
+  font-size: larger;
+  color: black;
+  background-color: rgb(114, 245, 206);
+  z-index: 9999;
+}
+
+input:hover {
+  background-color: rgb(234, 255, 248);
+  border: 2px solid yellow;
+}
+
+button {
+  background-color: rgb(15, 15, 224);
+  padding: 3px;
+  border-radius: 30px;
+  width: 100px;
+  color: aliceblue;
+  margin: auto;
+  display: block;
+  margin-top: 10px;
+  z-index: 9999;
+}
+
+button:hover {
+  background-color: rgb(69, 69, 221);
+}
+.petunjuk {
+  position: absolute;
+  display: block;
+  top: 138px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.petunjuk p {
+  text-align: center;
+  color: black;
+}
+
+.score-container {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 1px solid rgb(214, 198, 198);
+  right: 30px;
+  top: 20px;
+  display: flex;
+  box-shadow: 2px 10px 30px green;
+  background-color: rgb(101, 248, 248);
+}
+.score-container p {
+  margin: auto;
+  text-align: center;
+  font-size: small;
+}
+
+.user-score {
+  font-size: large;
+}
+.end {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: aliceblue;
+  padding-top: 50px;
+  display: none;
+  background-image: url(../../image/gif/1.gif);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+
+  margin: auto;
+}
+
+.end h1 h2 p {
+  text-align: center;
+}
+.end span {
+  color: rgb(13, 0, 128);
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.end1 {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: aliceblue;
+  padding-top: 50px;
+  display: none;
+
+  margin: auto;
+}
+
+.end1 h1 h2 p {
+  text-align: center;
+}
+.end1 span {
+  color: rgb(235, 4, 24);
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+/* .end a {
+    display: block;
+    width: 150px;
+    height: 30px;
+    border-radius: 9px;
+    background-color: rgb(0, 255, 21);
+    margin: auto;
+    margin-top: 25px;
+    color: rgb(1, 8, 15);
+    line-height: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+  } */
+
+.end a:hover {
+  background-color: rgb(69, 201, 57);
+}
+
+.end1 a {
+  display: block;
+  width: 150px;
+  height: 30px;
+  border-radius: 9px;
+  background-color: rgb(255, 0, 13);
+  margin: auto;
+  margin-top: 25px;
+  color: aliceblue;
+  line-height: 100px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.end1 a:hover {
+  background-color: rgb(5, 230, 16);
+}
+
+.sertifikat {
+  width: 400px;
+  height: 100px;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 50px;
+  background-color: hwb(34 35% 49%);
+  display: flex;
+  align-items: center;
+}
+
+.sertifikat a {
+  display: block;
+  font-size: 12px;
+  width: 200px;
+  height: 30px;
+  background-color: rgb(49, 226, 43);
+  margin: auto;
+  line-height: 30px;
+  text-decoration: none;
+  font-weight: bolder;
+  border-radius: 10px;
+}
+
+.bintang {
+  background-image: url(../../image/gif/bintang1.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: none;
+  z-index: -999;
+}
+
+.semangka {
+  background-image: url(../../image/gif/kecewa3.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: none;
+  top: -18px;
+  z-index: -999;
+}
+
+.game2,
+.game3,
+.game4,
+.game5,
+.game6,
+.game7,
+.game8,
+.game9,
+.game10,
+.game11,
+.game12,
+.game13,
+.game14,
+.game15,
+.game16,
+.game17,
+.game18,
+.game19,
+.game20 {
+  position: absolute;
+  top: 15.5%;
+  left: 50%;
+  transition: 2s;
+  transform: translate(-500%);
+  display: block;
+}
+
+.text {
+  text-align: center;
+}
+
+/* MEDIA QUERY */
+
+@media (min-width: 1000px) {
+  /* .game1, */
+  .game2,
+  .game3,
+  .game4,
+  .game5,
+  .game6,
+  .game7,
+  .game8,
+  .game9,
+  .game10,
+  .game11,
+  .game12,
+  .game13,
+  .game14,
+  .game15,
+  .game16,
+  .game17,
+  .game18,
+  .game19,
+  .game20 {
+    transition: 2s;
+    margin-top: -60px;
+  }
+
+  input {
+    width: 400px;
+  }
+
+  .petunjuk {
+    width: 400px;
+    margin-top: -60px;
+    text-align: center;
+  }
+
+  .tombol {
+    margin-left: 200px;
+    /* position: absolute; */
+    top: 150px;
+    height: 50px;
+    width: 130px;
+  }
+
+  .score-container {
+    /* position: absolute; */
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 1px solid rgb(214, 198, 198);
+    margin-right: 200px;
+    top: 150px;
+    display: flex;
+    box-shadow: 2px 10px 30px green;
+    background-color: rgb(101, 248, 248);
+  }
+
+  .game1 {
+    margin-top: -60px;
+  }
+
+  .pop {
+    margin-top: -80px;
+  }
+
+  body {
+    overflow: hidden;
+  }
+}

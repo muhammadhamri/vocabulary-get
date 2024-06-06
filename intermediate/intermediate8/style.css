@@ -1,0 +1,865 @@
+body {
+  background-image: linear-gradient(green, blue);
+  width: 10 0%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.game-container {
+  margin-top: 200px;
+}
+.tombol {
+  margin-left: 25px;
+  position: absolute;
+  top: 30px;
+  height: 50px;
+  width: 130px;
+  border-radius: 8px;
+  display: flex;
+  background-color: aliceblue;
+  animation: tombol 2s ease-in-out infinite;
+}
+
+@keyframes tombol {
+  0% {
+    background-image: linear-gradient(green, purple);
+  }
+
+  25% {
+    background-image: linear-gradient(yellow, rgb(0, 7, 100));
+  }
+
+  50% {
+    background-image: linear-gradient(rgb(241, 145, 145), rgb(61, 61, 218));
+  }
+  75% {
+    background-image: linear-gradient(grey, rgb(233, 11, 48));
+  }
+
+  100% {
+    background-image: linear-gradient(rgb(200, 114, 148), rgb(12, 245, 226));
+  }
+}
+
+.profil {
+  text-align: center;
+  margin: auto;
+}
+.profil a {
+  text-decoration: none;
+  color: rgb(243, 233, 233);
+}
+
+.tombol:hover {
+  transform: scale(1.2);
+}
+/* game 1 start */
+
+.game1 {
+  /* display: none; */
+  transition: 2s;
+}
+.gamekotak1 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(2, 7, 7);
+  margin-top: 100px;
+  position: relative;
+}
+
+.imagekotak1 {
+  width: 400px;
+  height: 200px;
+  background-color: aqua;
+  transition: transform 1s ease-in-out;
+  /* transform-origin: top left; */
+  background-image: url(../../image/intermed/cake.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  /* transform: rotate(-180deg);
+    transform-origin: top left; */
+}
+
+/* .imagekotak1:hover {
+    transform: rotate(-180deg);
+    transform-origin: top left;
+  } */
+
+/* game 1 end */
+
+/* game 2 start */
+
+.game2 {
+  display: none;
+}
+.gamekotak2 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(2, 7, 7);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h22 {
+  color: rgb(12, 248, 12);
+  margin: auto;
+  text-align: center;
+}
+
+.imagekotak2 {
+  width: 400px;
+  height: 200px;
+  background-color: aqua;
+  transition: transform 1s ease-in-out;
+  /* transform-origin: top left; */
+  background-image: url(../../image/intermed/oldbuilding.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+
+/* .imagekotak2:hover {
+    transform: rotate(-180deg);
+    transform-origin: top left;
+  } */
+/* game 2 end */
+
+/* game 3 start */
+.game3 {
+  display: none;
+}
+.gamekotak3 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(2, 7, 7);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h23 {
+  color: antiquewhite;
+  margin: auto;
+}
+
+.imagekotak3 {
+  width: 400px;
+  height: 200px;
+  background-color: aqua;
+  transition: transform 1s ease-in-out;
+  /* transform-origin: top left; */
+  background-image: url(../../image/intermed/car.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+
+/* .imagekotak3:hover {
+    transform: rotate(-180deg);
+    transform-origin: top left;
+  } */
+/* game 3 end */
+
+/* game 4 start */
+.game4 {
+  display: none;
+}
+.gamekotak4 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(2, 7, 7);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h24 {
+  color: antiquewhite;
+  margin: auto;
+}
+
+.imagekotak4 {
+  width: 400px;
+  height: 200px;
+  background-color: aqua;
+  transition: transform 1s ease-in-out;
+  /* transform-origin: top left; */
+  background-image: url(../../image/intermed/elementaryschool.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+
+/* .imagekotak4:hover {
+    transform: rotate(-180deg);
+    transform-origin: top left;
+  } */
+/* game 4 end */
+
+/* game 5 start */
+.game5 {
+  display: none;
+}
+.gamekotak5 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(2, 7, 7);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h25 {
+  color: antiquewhite;
+  margin: auto;
+}
+
+.imagekotak5 {
+  width: 400px;
+  height: 200px;
+  background-color: aqua;
+  transition: transform 1s ease-in-out;
+  /* transform-origin: top left; */
+  background-image: url(../../image/intermed/office.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+
+/* .imagekotak5:hover {
+    transform: rotate(-180deg);
+    transform-origin: top left;
+  } */
+/* game 5 end */
+
+/* game 6 start */
+.game6 {
+  display: none;
+}
+.gamekotak6 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(2, 7, 7);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h26 {
+  color: antiquewhite;
+  margin: auto;
+}
+
+.imagekotak6 {
+  width: 400px;
+  height: 200px;
+  background-color: aqua;
+  transition: transform 1s ease-in-out;
+  /* transform-origin: top left; */
+  background-image: url(../../image/intermed/museum.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+
+/* .imagekotak6:hover {
+    transform: rotate(-180deg);
+    transform-origin: top left;
+  } */
+/* game 6 end */
+
+/* game 7 start */
+.game7 {
+  display: none;
+}
+.gamekotak7 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(2, 7, 7);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h27 {
+  color: antiquewhite;
+  margin: auto;
+}
+
+.imagekotak7 {
+  width: 400px;
+  height: 200px;
+  background-color: aqua;
+  transition: transform 1s ease-in-out;
+  /* transform-origin: top left; */
+  background-image: url(../../image/intermed/book.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+
+/* .imagekotak7:hover {
+    transform: rotate(-180deg);
+    transform-origin: top left;
+  } */
+/* game 7 end */
+
+/* game 8 start */
+.game8 {
+  display: none;
+}
+.gamekotak8 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(2, 7, 7);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h28 {
+  color: antiquewhite;
+  margin: auto;
+}
+
+.imagekotak8 {
+  width: 400px;
+  height: 200px;
+  background-color: aqua;
+  transition: transform 1s ease-in-out;
+  /* transform-origin: top left; */
+  background-image: url(../../image/intermed/ring.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+
+/* .imagekotak8:hover {
+    transform: rotate(-180deg);
+    transform-origin: top left;
+  } */
+/* game 8 end */
+
+/* game 9 start */
+.game9 {
+  display: none;
+}
+.gamekotak9 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(2, 7, 7);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h29 {
+  color: antiquewhite;
+  margin: auto;
+}
+
+.imagekotak9 {
+  width: 400px;
+  height: 200px;
+  background-color: aqua;
+  transition: transform 1s ease-in-out;
+  /* transform-origin: top left; */
+  background-image: url(../../image/intermed/invite.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+
+/* .imagekotak9:hover {
+    transform: rotate(-180deg);
+    transform-origin: top left;
+  } */
+/* game 9 end */
+
+/* game 10 start */
+.game10 {
+  display: none;
+}
+.gamekotak10 {
+  margin: auto;
+  display: flex;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(2, 7, 7);
+  margin-top: 100px;
+  position: relative;
+}
+
+.h210 {
+  color: antiquewhite;
+  margin: auto;
+}
+
+.imagekotak10 {
+  width: 400px;
+  height: 200px;
+  background-color: aqua;
+  transition: transform 1s ease-in-out;
+  /* transform-origin: top left; */
+  background-image: url(../../image/intermed/novel.png);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+}
+
+/* .imagekotak10:hover {
+    transform: rotate(-180deg);
+    transform-origin: top left;
+  } */
+/* game 10 end */
+
+.pop {
+  height: 100px;
+  width: 200px;
+  margin: auto;
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.popup {
+  width: 200px;
+  height: 50px;
+  border: 1px solid red;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(54, 211, 37);
+  animation: popup1 2s ease-in-out infinite;
+  display: none;
+}
+
+@keyframes popup1 {
+  from {
+    scale: 1;
+  }
+
+  to {
+    scale: 3;
+  }
+}
+
+.popup2 {
+  width: 200px;
+  height: 60px;
+  border: 1px solid red;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(226, 219, 12);
+  animation: popup2 2s ease-in-out infinite;
+  color: rgb(21, 12, 0);
+  display: none;
+  animation-delay: 1s;
+}
+
+@keyframes popup2 {
+  from {
+    width: 200px;
+  }
+
+  to {
+    width: 200px;
+  }
+}
+
+.popup1 {
+  width: 200px;
+  height: 40px;
+  border: 1px solid red;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(245, 240, 240);
+  animation: popup1 0.5s ease-in-out infinite;
+  background-color: red;
+  color: antiquewhite;
+  display: none;
+  animation-delay: 1s;
+}
+
+.popup1 h2 {
+  color: rgb(236, 233, 233);
+  font-size: 25px;
+}
+
+@keyframes popup1 {
+  from {
+    scale: 1;
+  }
+
+  to {
+    scale: 3;
+  }
+}
+
+input {
+  margin: auto;
+  display: block;
+  width: 393px;
+  margin-top: 6px;
+  padding: 5px;
+  border: 1px solid rgb(128, 0, 100);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  background-color: aquamarine;
+}
+
+input:hover {
+  background-color: rgb(234, 255, 248);
+  border: 2px solid yellow;
+}
+
+button {
+  background-color: rgb(243, 9, 192);
+  padding: 3px;
+  border-radius: 30px;
+  width: 100px;
+  color: aliceblue;
+  margin: auto;
+  display: block;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: rgb(69, 69, 221);
+}
+.petunjuk {
+  position: absolute;
+  display: block;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+}
+.petunjuk p {
+  text-align: center;
+  color: rgb(255, 251, 7);
+}
+
+.score-container {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 1px solid rgb(214, 198, 198);
+  right: 30px;
+  top: 20px;
+  display: flex;
+  box-shadow: 2px 10px 30px green;
+  background-color: rgb(101, 248, 248);
+}
+.score-container p {
+  margin: auto;
+  text-align: center;
+  font-size: small;
+}
+
+.user-score {
+  font-size: large;
+}
+.end {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: aliceblue;
+  padding-top: 50px;
+  display: none;
+  background-image: url(image/1.gif);
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+
+  margin: auto;
+}
+
+.end h1 h2 p {
+  text-align: center;
+}
+.end span {
+  color: rgb(13, 0, 128);
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.end1 {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: aliceblue;
+  padding-top: 50px;
+  display: none;
+
+  margin: auto;
+}
+
+.end1 h1 h2 p {
+  text-align: center;
+}
+.end1 span {
+  color: rgb(235, 4, 24);
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.end a {
+  display: block;
+  width: 200px;
+  height: 30px;
+  border-radius: 9px;
+  background-color: rgb(0, 255, 21);
+  margin: auto;
+  margin-top: 25px;
+  color: rgb(1, 8, 15);
+  line-height: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.end a:hover {
+  background-color: rgb(69, 201, 57);
+}
+
+.end1 a {
+  display: block;
+  width: 200px;
+  height: 30px;
+  border-radius: 9px;
+  background-color: rgb(255, 0, 13);
+  margin: auto;
+  margin-top: 25px;
+  color: aliceblue;
+  line-height: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.end1 a:hover {
+  background-color: rgb(5, 230, 16);
+}
+/* .game1, */
+.game2,
+.game3,
+.game4,
+.game5,
+.game6,
+.game7,
+.game8,
+.game9,
+.game10,
+.game11,
+.game12,
+.game13,
+.game14,
+.game15,
+.game16,
+.game17,
+.game18,
+.game19,
+.game20 {
+  position: absolute;
+  top: 17.5%;
+  left: 50%;
+  transition: 2s;
+  transform: translate(-400%);
+  display: block;
+}
+
+@media (min-width: 600px) {
+  body {
+    height: 100vh;
+  }
+}
+
+.aplause {
+  background-image: url(../../gif/bintang6.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: none;
+  z-index: -999;
+}
+
+.kecewa {
+  background-image: url(../../gif/kecewa3.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: none;
+  top: -18px;
+  z-index: -999;
+}
+
+.textkotak1,
+.textkotak2,
+.textkotak3,
+.textkotak4,
+.textkotak5,
+.textkotak6,
+.textkotak7,
+.textkotak8,
+.textkotak9,
+.textkotak10 {
+  width: 400px;
+  height: 200px;
+  background-color: aqua;
+  transition: transform 1s ease-in-out;
+  /* background-image: url(image/1.jpg); */
+  background-position: center;
+  box-sizing: border-box;
+  background-size: cover;
+  position: absolute;
+}
+
+.textkotak1 H2,
+.textkotak2 H2,
+.textkotak3 H2,
+.textkotak4 H2,
+.textkotak5 H2,
+.textkotak6 H2,
+.textkotak7 H2,
+.textkotak8 H2,
+.textkotak9 H2,
+.textkotak10 H2 {
+  text-align: center;
+  /* line-height: 100px; */
+}
+.h21,
+.h22,
+.h23,
+.h24,
+.h25,
+.h26,
+.h27,
+.h28,
+.h29,
+.h210,
+.h211,
+.h212,
+.h213,
+.h214,
+.h215,
+.h216,
+.h217,
+.h218,
+.h219,
+.h220 {
+  color: rgb(255, 255, 255);
+  margin: auto;
+  margin-top: 300px;
+  text-align: center;
+}
+
+/* MEDI QUERIES */
+
+@media (min-width: 1000px) {
+  .game1,
+  .game2,
+  .game3,
+  .game4,
+  .game5,
+  .game6,
+  .game7,
+  .game8,
+  .game9,
+  .game10 {
+    transition: 2s;
+    margin-top: -50px;
+  }
+
+  input {
+    width: 400px;
+  }
+
+  .petunjuk {
+    width: 400px;
+    margin-top: -60px;
+  }
+
+  .tombol {
+    margin-left: 200px;
+    /* position: absolute; */
+    top: 150px;
+    height: 50px;
+    width: 130px;
+  }
+
+  .score-container {
+    /* position: absolute; */
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 1px solid rgb(214, 198, 198);
+    margin-right: 200px;
+    top: 150px;
+    display: flex;
+    box-shadow: 2px 10px 30px green;
+    background-color: rgb(101, 248, 248);
+  }
+
+  body {
+    overflow: hidden;
+  }
+}
