@@ -133,7 +133,7 @@ body {
 
 .answer {
   width: 400px;
-  height: 140px;
+  height: 160px;
   display: flex;
   justify-content: center;
   margin: auto;
@@ -153,6 +153,7 @@ body {
   font-size: 16px;
   color: blue;
   padding-left: 5px;
+  margin-bottom: 2px;
 }
 
 #choice2 {
