@@ -45,8 +45,8 @@ const end1 = document.querySelector(".end1");
 const gameContainer = document.querySelector(".game-container");
 const soundEfectBenar = document.querySelector(".soundefect-benar");
 const soundEfectSalah = document.querySelector(".soundefect-salah");
-const bintang = document.querySelector(".bintang");
-const semangka = document.querySelector(".semangka");
+const aplause = document.querySelector(".aplause");
+const kecewa = document.querySelector(".kecewa");
 const activeElements = document.querySelectorAll(".active");
 const active1 = document.querySelector(".game1");
 const active2 = document.querySelector(".game2");
@@ -83,7 +83,7 @@ choices.forEach(function (choice) {
       // imageKotak1.style.transform = "rotate(180deg)";
       imageKotakSatu.style.transform = "translate(400px)";
       popup.style.display = "block";
-      bintang.style.display = "block";
+      aplause.style.display = "block";
       updateScore(100);
       soundEfectBenar.play();
       backsound.play();
@@ -94,7 +94,7 @@ choices.forEach(function (choice) {
         // imageKotak1.style.transform = "rotate(0deg)";
         imageKotakSatu.style.transform = "translate(0)";
         popup.style.display = "none";
-        bintang.style.display = "none";
+        aplause.style.display = "none";
         soundEfectBenar.pause();
       }, 3000);
 
@@ -111,7 +111,7 @@ choices.forEach(function (choice) {
       // imageKotak1.style.transform = "rotate(180deg)";
       imageKotakSatu.style.transform = "translate(400px)";
       popup1.style.display = "block";
-      semangka.style.display = "block";
+      kecewa.style.display = "block";
 
       updateScore(-50);
       soundEfectSalah.play();
@@ -122,7 +122,7 @@ choices.forEach(function (choice) {
         imageKotakSatu.style.transform = "translate(0)";
         popup1.style.display = "none";
         soundEfectSalah.pause();
-        semangka.style.display = "none";
+        kecewa.style.display = "none";
       }, 3000);
 
       setTimeout(function () {
@@ -158,7 +158,7 @@ choices2.forEach(function (choice2) {
       // imageKotak2.style.transform = "rotate(180deg)";
       imageKotakDua.style.transform = "translate(400px)";
       popup.style.display = "block";
-      bintang.style.display = "block";
+      aplause.style.display = "block";
 
       updateScore(100);
       soundEfectBenar.play();
@@ -168,7 +168,7 @@ choices2.forEach(function (choice2) {
         // imageKotak2.style.transform = "rotate(0deg)";
         imageKotakDua.style.transform = "translate(0)";
         popup.style.display = "none";
-        bintang.style.display = "none";
+        aplause.style.display = "none";
       }, 3000);
 
       setTimeout(function () {
@@ -184,7 +184,7 @@ choices2.forEach(function (choice2) {
       // imageKotak2.style.transform = "rotate(180deg)";
       imageKotakDua.style.transform = "translate(400px)";
       popup1.style.display = "block";
-      semangka.style.display = "block";
+      kecewa.style.display = "block";
 
       updateScore(-50);
       soundEfectSalah.play();
@@ -194,7 +194,7 @@ choices2.forEach(function (choice2) {
         // imageKotak2.style.transform = "rotate(0deg)";
         imageKotakDua.style.transform = "translate(0)";
         popup1.style.display = "none";
-        semangka.style.display = "none";
+        kecewa.style.display = "none";
         soundEfectSalah.pause();
       }, 3000);
 
@@ -231,7 +231,7 @@ choices3.forEach(function (choice3) {
       // imageKotak3.style.transform = "rotate(180deg)";
       imageKotakTiga.style.transform = "translate(400px)";
       popup.style.display = "block";
-      bintang.style.display = "block";
+      aplause.style.display = "block";
 
       updateScore(100);
       soundEfectBenar.play();
@@ -241,7 +241,7 @@ choices3.forEach(function (choice3) {
         // imageKotak3.style.transform = "rotate(0deg)";
         imageKotakTiga.style.transform = "translate(0)";
         popup.style.display = "none";
-        bintang.style.display = "none";
+        aplause.style.display = "none";
       }, 3000);
 
       setTimeout(function () {
@@ -257,7 +257,7 @@ choices3.forEach(function (choice3) {
       // imageKotak3.style.transform = "rotate(180deg)";
       imageKotakTiga.style.transform = "translate(400px)";
       popup1.style.display = "block";
-      semangka.style.display = "block";
+      kecewa.style.display = "block";
 
       updateScore(-50);
       soundEfectSalah.play();
@@ -267,7 +267,7 @@ choices3.forEach(function (choice3) {
         // imageKotak3.style.transform = "rotate(0deg)";
         imageKotakTiga.style.transform = "translate(0)";
         popup1.style.display = "none";
-        semangka.style.display = "none";
+        kecewa.style.display = "none";
         soundEfectSalah.pause();
       }, 3000);
 
@@ -298,7 +298,7 @@ choices4.forEach(function (choice4) {
       // imageKotak4.style.transform = "rotate(180deg)";
       imageKotakEmpat.style.transform = "translate(400px)";
       popup.style.display = "block";
-      bintang.style.display = "block";
+      aplause.style.display = "block";
 
       updateScore(100);
       soundEfectBenar.play();
@@ -308,7 +308,7 @@ choices4.forEach(function (choice4) {
         // imageKotak4.style.transform = "rotate(0deg)";
         imageKotakEmpat.style.transform = "translate(0)";
         popup.style.display = "none";
-        bintang.style.display = "none";
+        aplause.style.display = "none";
       }, 3000);
 
       setTimeout(function () {
@@ -324,7 +324,7 @@ choices4.forEach(function (choice4) {
       // imageKotak4.style.transform = "rotate(180deg)";
       imageKotakEmpat.style.transform = "translate(400px)";
       popup1.style.display = "block";
-      semangka.style.display = "block";
+      kecewa.style.display = "block";
 
       updateScore(-50);
       soundEfectSalah.play();
@@ -334,7 +334,7 @@ choices4.forEach(function (choice4) {
         // imageKotak4.style.transform = "rotate(0deg)";
         imageKotakEmpat.style.transform = "translate(0)";
         popup1.style.display = "none";
-        semangka.style.display = "none";
+        kecewa.style.display = "none";
         soundEfectSalah.pause();
       }, 3000);
 
@@ -365,7 +365,7 @@ choices5.forEach(function (choice5) {
       // imageKotak5.style.transform = "rotate(180deg)";
       imageKotakLima.style.transform = "translate(400px)";
       popup.style.display = "block";
-      bintang.style.display = "block";
+      aplause.style.display = "block";
 
       updateScore(100);
       soundEfectBenar.play();
@@ -375,7 +375,7 @@ choices5.forEach(function (choice5) {
         // imageKotak5.style.transform = "rotate(0deg)";
         imageKotakLima.style.transform = "translate(0)";
         popup.style.display = "none";
-        bintang.style.display = "none";
+        aplause.style.display = "none";
       }, 3000);
 
       setTimeout(function () {
@@ -391,7 +391,7 @@ choices5.forEach(function (choice5) {
       // imageKotak5.style.transform = "rotate(180deg)";
       imageKotakLima.style.transform = "translate(400px)";
       popup1.style.display = "block";
-      semangka.style.display = "block";
+      kecewa.style.display = "block";
 
       updateScore(-50);
       soundEfectSalah.play();
@@ -401,7 +401,7 @@ choices5.forEach(function (choice5) {
         // imageKotak5.style.transform = "rotate(0deg)";
         imageKotakLima.style.transform = "translate(0)";
         popup1.style.display = "none";
-        semangka.style.display = "none";
+        kecewa.style.display = "none";
         soundEfectSalah.pause();
       }, 3000);
 
@@ -432,7 +432,7 @@ choices6.forEach(function (choice6) {
       // imageKotak6.style.transform = "rotate(180deg)";
       imageKotakEnam.style.transform = "translate(400px)";
       popup.style.display = "block";
-      bintang.style.display = "block";
+      aplause.style.display = "block";
 
       updateScore(100);
       soundEfectBenar.play();
@@ -442,7 +442,7 @@ choices6.forEach(function (choice6) {
         // imageKotak6.style.transform = "rotate(0deg)";
         imageKotakEnam.style.transform = "translate(0)";
         popup.style.display = "none";
-        bintang.style.display = "none";
+        aplause.style.display = "none";
       }, 3000);
 
       setTimeout(function () {
@@ -458,7 +458,7 @@ choices6.forEach(function (choice6) {
       // imageKotak6.style.transform = "rotate(180deg)";
       imageKotakEnam.style.transform = "translate(400px)";
       popup1.style.display = "block";
-      semangka.style.display = "block";
+      kecewa.style.display = "block";
 
       updateScore(-50);
       soundEfectSalah.play();
@@ -468,7 +468,7 @@ choices6.forEach(function (choice6) {
         // imageKotak6.style.transform = "rotate(0deg)";
         imageKotakEnam.style.transform = "translate(0)";
         popup1.style.display = "none";
-        semangka.style.display = "none";
+        kecewa.style.display = "none";
         soundEfectSalah.pause();
       }, 3000);
 
@@ -499,7 +499,7 @@ choices7.forEach(function (choice7) {
       // imageKotak7.style.transform = "rotate(180deg)";
       imageKotakTujuh.style.transform = "translate(400px)";
       popup.style.display = "block";
-      bintang.style.display = "block";
+      aplause.style.display = "block";
 
       updateScore(100);
       soundEfectBenar.play();
@@ -509,7 +509,7 @@ choices7.forEach(function (choice7) {
         // imageKotak7.style.transform = "rotate(0deg)";
         imageKotakTujuh.style.transform = "translate(0)";
         popup.style.display = "none";
-        bintang.style.display = "none";
+        aplause.style.display = "none";
       }, 3000);
 
       setTimeout(function () {
@@ -525,7 +525,7 @@ choices7.forEach(function (choice7) {
       // imageKotak7.style.transform = "rotate(180deg)";
       imageKotakTujuh.style.transform = "translate(400px)";
       popup1.style.display = "block";
-      semangka.style.display = "block";
+      kecewa.style.display = "block";
 
       updateScore(-50);
       soundEfectSalah.play();
@@ -535,7 +535,7 @@ choices7.forEach(function (choice7) {
         // imageKotak7.style.transform = "rotate(0deg)";
         imageKotakTujuh.style.transform = "translate(0)";
         popup1.style.display = "none";
-        semangka.style.display = "none";
+        kecewa.style.display = "none";
         soundEfectSalah.pause();
       }, 3000);
 
@@ -566,7 +566,7 @@ choices8.forEach(function (choice8) {
       // imageKotak8.style.transform = "rotate(180deg)";
       imageKotakDelapan.style.transform = "translate(400px)";
       popup.style.display = "block";
-      bintang.style.display = "block";
+      aplause.style.display = "block";
 
       updateScore(100);
       soundEfectBenar.play();
@@ -576,7 +576,7 @@ choices8.forEach(function (choice8) {
         // imageKotak8.style.transform = "rotate(0deg)";
         imageKotakDelapan.style.transform = "translate(0)";
         popup.style.display = "none";
-        bintang.style.display = "none";
+        aplause.style.display = "none";
       }, 3000);
 
       setTimeout(function () {
@@ -592,7 +592,7 @@ choices8.forEach(function (choice8) {
       // imageKotak8.style.transform = "rotate(180deg)";
       imageKotakDelapan.style.transform = "translate(400px)";
       popup1.style.display = "block";
-      semangka.style.display = "block";
+      kecewa.style.display = "block";
 
       updateScore(-50);
       soundEfectSalah.play();
@@ -602,7 +602,7 @@ choices8.forEach(function (choice8) {
         // imageKotak8.style.transform = "rotate(0deg)";
         imageKotakDelapan.style.transform = "translate(0)";
         popup1.style.display = "none";
-        semangka.style.display = "none";
+        kecewa.style.display = "none";
         soundEfectSalah.pause();
       }, 3000);
 
@@ -633,7 +633,7 @@ choices9.forEach(function (choice9) {
       // imageKotak9.style.transform = "rotate(180deg)";
       imageKotaksembilan.style.transform = "translate(400px)";
       popup.style.display = "block";
-      bintang.style.display = "block";
+      aplause.style.display = "block";
 
       updateScore(100);
       soundEfectBenar.play();
@@ -643,7 +643,7 @@ choices9.forEach(function (choice9) {
         // imageKotak9.style.transform = "rotate(0deg)";
         imageKotaksembilan.style.transform = "translate(0)";
         popup.style.display = "none";
-        bintang.style.display = "none";
+        aplause.style.display = "none";
       }, 3000);
 
       setTimeout(function () {
@@ -659,7 +659,7 @@ choices9.forEach(function (choice9) {
       // imageKotak9.style.transform = "rotate(180deg)";
       imageKotaksembilan.style.transform = "translate(400px)";
       popup1.style.display = "block";
-      semangka.style.display = "block";
+      kecewa.style.display = "block";
 
       updateScore(-50);
       soundEfectSalah.play();
@@ -669,7 +669,7 @@ choices9.forEach(function (choice9) {
         // imageKotak9.style.transform = "rotate(0deg)";
         imageKotaksembilan.style.transform = "translate(0)";
         popup1.style.display = "none";
-        semangka.style.display = "none";
+        kecewa.style.display = "none";
         soundEfectSalah.pause();
       }, 3000);
 
@@ -700,7 +700,7 @@ choices10.forEach(function (choice10) {
       // imageKotak10.style.transform = "rotate(180deg)";
       imageKotakSepuluh.style.transform = "translate(400px)";
       popup.style.display = "block";
-      bintang.style.display = "block";
+      aplause.style.display = "block";
 
       updateScore(100);
       soundEfectBenar.play();
@@ -710,7 +710,7 @@ choices10.forEach(function (choice10) {
         // imageKotak10.style.transform = "rotate(0deg)";
         imageKotakSepuluh.style.transform = "translate(0)";
         popup.style.display = "none";
-        bintang.style.display = "none";
+        aplause.style.display = "none";
       }, 3000);
 
       setTimeout(function () {
@@ -726,7 +726,7 @@ choices10.forEach(function (choice10) {
       // imageKotak10.style.transform = "rotate(180deg)";
       imageKotakSepuluh.style.transform = "translate(400px)";
       popup1.style.display = "block";
-      semangka.style.display = "block";
+      kecewa.style.display = "block";
 
       updateScore(-50);
       soundEfectSalah.play();
@@ -736,7 +736,7 @@ choices10.forEach(function (choice10) {
         // imageKotak10.style.transform = "rotate(0deg)";
         imageKotakSepuluh.style.transform = "translate(0)";
         popup1.style.display = "none";
-        semangka.style.display = "none";
+        kecewa.style.display = "none";
         soundEfectSalah.pause();
       }, 3000);
 
@@ -767,7 +767,7 @@ choices11.forEach(function (choice11) {
       // imageKotak11.style.transform = "rotate(180deg)";
       imageKotakSebelas.style.transform = "translate(400px)";
       popup.style.display = "block";
-      bintang.style.display = "block";
+      aplause.style.display = "block";
 
       updateScore(100);
       soundEfectBenar.play();
@@ -777,7 +777,7 @@ choices11.forEach(function (choice11) {
         // imageKotak11.style.transform = "rotate(0deg)";
         imageKotakSebelas.style.transform = "translate(0)";
         popup.style.display = "none";
-        bintang.style.display = "none";
+        aplause.style.display = "none";
       }, 3000);
 
       setTimeout(function () {
@@ -793,7 +793,7 @@ choices11.forEach(function (choice11) {
       // imageKotak11.style.transform = "rotate(180deg)";
       imageKotakSebelas.style.transform = "translate(400px)";
       popup1.style.display = "block";
-      semangka.style.display = "block";
+      kecewa.style.display = "block";
 
       updateScore(-50);
       soundEfectSalah.play();
@@ -803,7 +803,7 @@ choices11.forEach(function (choice11) {
         // imageKotak11.style.transform = "rotate(0deg)";
         imageKotakSebelas.style.transform = "translate(0)";
         popup1.style.display = "none";
-        semangka.style.display = "none";
+        kecewa.style.display = "none";
         soundEfectSalah.pause();
       }, 3000);
 
@@ -834,7 +834,7 @@ choices12.forEach(function (choice12) {
       // imageKotak12.style.transform = "rotate(180deg)";
       imageKotakDuabelas.style.transform = "translate(400px)";
       popup.style.display = "block";
-      bintang.style.display = "block";
+      aplause.style.display = "block";
 
       updateScore(100);
       soundEfectBenar.play();
@@ -844,7 +844,7 @@ choices12.forEach(function (choice12) {
         // imageKotak12.style.transform = "rotate(0deg)";
         imageKotakDuabelas.style.transform = "translate(0)";
         popup.style.display = "none";
-        bintang.style.display = "none";
+        aplause.style.display = "none";
       }, 3000);
 
       setTimeout(function () {
@@ -860,7 +860,7 @@ choices12.forEach(function (choice12) {
       // imageKotak12.style.transform = "rotate(180deg)";
       imageKotakDuabelas.style.transform = "translate(400px)";
       popup1.style.display = "block";
-      semangka.style.display = "block";
+      kecewa.style.display = "block";
 
       updateScore(-50);
       soundEfectSalah.play();
@@ -870,7 +870,7 @@ choices12.forEach(function (choice12) {
         // imageKotak12.style.transform = "rotate(0deg)";
         imageKotakDuabelas.style.transform = "translate(400px)";
         popup1.style.display = "none";
-        semangka.style.display = "none";
+        kecewa.style.display = "none";
         soundEfectSalah.pause();
       }, 3000);
 
@@ -901,7 +901,7 @@ choices13.forEach(function (choice13) {
       // imageKotak13.style.transform = "rotate(180deg)";
       imageKotakTigabelas.style.transform = "translate(400px)";
       popup.style.display = "block";
-      bintang.style.display = "block";
+      aplause.style.display = "block";
 
       updateScore(100);
       soundEfectBenar.play();
@@ -911,7 +911,7 @@ choices13.forEach(function (choice13) {
         // imageKotak13.style.transform = "rotate(0deg)";
         imageKotakTigabelas.style.transform = "translate(0)";
         popup.style.display = "none";
-        bintang.style.display = "none";
+        aplause.style.display = "none";
       }, 3000);
 
       setTimeout(function () {
@@ -927,7 +927,7 @@ choices13.forEach(function (choice13) {
       // imageKotak13.style.transform = "rotate(180deg)";
       imageKotakTigabelas.style.transform = "translate(400px)";
       popup1.style.display = "block";
-      semangka.style.display = "block";
+      kecewa.style.display = "block";
 
       updateScore(-50);
       soundEfectSalah.play();
@@ -937,7 +937,7 @@ choices13.forEach(function (choice13) {
         // imageKotak13.style.transform = "rotate(0deg)";
         imageKotakTigabelas.style.transform = "translate(0)";
         popup1.style.display = "none";
-        semangka.style.display = "none";
+        kecewa.style.display = "none";
         soundEfectSalah.pause();
       }, 3000);
 
@@ -968,7 +968,7 @@ choices14.forEach(function (choice14) {
       // imageKotak14.style.transform = "rotate(180deg)";
       imageKotakEmpatbelas.style.transform = "translate(400px)";
       popup.style.display = "block";
-      bintang.style.display = "block";
+      aplause.style.display = "block";
 
       updateScore(100);
       soundEfectBenar.play();
@@ -978,7 +978,7 @@ choices14.forEach(function (choice14) {
         // imageKotak14.style.transform = "rotate(0deg)";
         imageKotakEmpatbelas.style.transform = "translate(0)";
         popup.style.display = "none";
-        bintang.style.display = "none";
+        aplause.style.display = "none";
       }, 3000);
 
       setTimeout(function () {
@@ -994,7 +994,7 @@ choices14.forEach(function (choice14) {
       // imageKotak14.style.transform = "rotate(180deg)";
       imageKotakEmpatbelas.style.transform = "translate(400px)";
       popup1.style.display = "block";
-      semangka.style.display = "block";
+      kecewa.style.display = "block";
 
       updateScore(-50);
       soundEfectSalah.play();
@@ -1004,7 +1004,7 @@ choices14.forEach(function (choice14) {
         // imageKotak14.style.transform = "rotate(0deg)";
         imageKotakEmpatbelas.style.transform = "translate(0)";
         popup1.style.display = "none";
-        semangka.style.display = "none";
+        kecewa.style.display = "none";
         soundEfectSalah.pause();
       }, 3000);
 
@@ -1035,7 +1035,7 @@ choices15.forEach(function (choice15) {
       // imageKotak15.style.transform = "rotate(180deg)";
       imageKotakLimabelas.style.transform = "translate(400px)";
       popup.style.display = "block";
-      bintang.style.display = "block";
+      aplause.style.display = "block";
 
       updateScore(100);
       soundEfectBenar.play();
@@ -1045,7 +1045,7 @@ choices15.forEach(function (choice15) {
         // imageKotak15.style.transform = "rotate(0deg)";
         imageKotakLimabelas.style.transform = "translate(0)";
         popup.style.display = "none";
-        bintang.style.display = "none";
+        aplause.style.display = "none";
       }, 3000);
 
       setTimeout(function () {
@@ -1061,7 +1061,7 @@ choices15.forEach(function (choice15) {
       // imageKotak15.style.transform = "rotate(180deg)";
       imageKotakLimabelas.style.transform = "translate(400px)";
       popup1.style.display = "block";
-      semangka.style.display = "block";
+      kecewa.style.display = "block";
 
       updateScore(-50);
       soundEfectSalah.play();
@@ -1071,7 +1071,7 @@ choices15.forEach(function (choice15) {
         // imageKotak15.style.transform = "rotate(0deg)";
         imageKotakLimabelas.style.transform = "translate(0)";
         popup1.style.display = "none";
-        semangka.style.display = "none";
+        kecewa.style.display = "none";
         soundEfectSalah.pause();
       }, 3000);
 
@@ -1101,7 +1101,7 @@ choices16.forEach(function (choice16) {
       // imageKotak16.style.transform = "rotate(180deg)";
       imageKotakEnambelas.style.transform = "translate(400px)";
       popup.style.display = "block";
-      bintang.style.display = "block";
+      aplause.style.display = "block";
 
       updateScore(100);
       soundEfectBenar.play();
@@ -1111,7 +1111,7 @@ choices16.forEach(function (choice16) {
         // imageKotak16.style.transform = "rotate(0deg)";
         imageKotakEnambelas.style.transform = "translate(0)";
         popup.style.display = "none";
-        bintang.style.display = "none";
+        aplause.style.display = "none";
       }, 3000);
 
       setTimeout(function () {
@@ -1127,7 +1127,7 @@ choices16.forEach(function (choice16) {
       // imageKotak16.style.transform = "rotate(180deg)";
       imageKotakEnambelas.style.transform = "translate(400px)";
       popup1.style.display = "block";
-      semangka.style.display = "block";
+      kecewa.style.display = "block";
 
       updateScore(-50);
       soundEfectSalah.play();
@@ -1137,7 +1137,7 @@ choices16.forEach(function (choice16) {
         // imageKotak16.style.transform = "rotate(0deg)";
         imageKotakEnambelas.style.transform = "translate(0)";
         popup1.style.display = "none";
-        semangka.style.display = "none";
+        kecewa.style.display = "none";
         soundEfectSalah.pause();
       }, 3000);
 
@@ -1168,7 +1168,7 @@ choices17.forEach(function (choice17) {
       // imageKotak17.style.transform = "rotate(180deg)";
       imageKotakTujuhbelas.style.transform = "translate(400px)";
       popup.style.display = "block";
-      bintang.style.display = "block";
+      aplause.style.display = "block";
 
       updateScore(100);
       soundEfectBenar.play();
@@ -1178,7 +1178,7 @@ choices17.forEach(function (choice17) {
         // imageKotak17.style.transform = "rotate(0deg)";
         imageKotakTujuhbelas.style.transform = "translate(0)";
         popup.style.display = "none";
-        bintang.style.display = "none";
+        aplause.style.display = "none";
       }, 3000);
 
       setTimeout(function () {
@@ -1194,7 +1194,7 @@ choices17.forEach(function (choice17) {
       // imageKotak17.style.transform = "rotate(180deg)";
       imageKotakTujuhbelas.style.transform = "translate(400px)";
       popup1.style.display = "block";
-      semangka.style.display = "block";
+      kecewa.style.display = "block";
 
       updateScore(-50);
       soundEfectSalah.play();
@@ -1204,7 +1204,7 @@ choices17.forEach(function (choice17) {
         // imageKotak17.style.transform = "rotate(0deg)";
         imageKotakTujuhbelas.style.transform = "translate(0)";
         popup1.style.display = "none";
-        semangka.style.display = "none";
+        kecewa.style.display = "none";
         soundEfectSalah.pause();
       }, 3000);
 
@@ -1236,7 +1236,7 @@ choices18.forEach(function (choice18) {
       // imageKotak18.style.transform = "rotate(180deg)";
       imageKotakDelapanbelas.style.transform = "translate(400px)";
       popup.style.display = "block";
-      bintang.style.display = "block";
+      aplause.style.display = "block";
 
       updateScore(100);
       soundEfectBenar.play();
@@ -1246,7 +1246,7 @@ choices18.forEach(function (choice18) {
         // imageKotak18.style.transform = "rotate(0deg)";
         imageKotakDelapanbelas.style.transform = "translate(0)";
         popup.style.display = "none";
-        bintang.style.display = "none";
+        aplause.style.display = "none";
       }, 3000);
 
       setTimeout(function () {
@@ -1262,7 +1262,7 @@ choices18.forEach(function (choice18) {
       // imageKotak18.style.transform = "rotate(180deg)";
       imageKotakDelapanbelas.style.transform = "translate(400px)";
       popup1.style.display = "block";
-      semangka.style.display = "block";
+      kecewa.style.display = "block";
 
       updateScore(-50);
       soundEfectSalah.play();
@@ -1272,7 +1272,7 @@ choices18.forEach(function (choice18) {
         // imageKotak18.style.transform = "rotate(0deg)";
         imageKotakDelapanbelas.style.transform = "translate(0)";
         popup1.style.display = "none";
-        semangka.style.display = "none";
+        kecewa.style.display = "none";
         soundEfectSalah.pause();
       }, 3000);
 
@@ -1304,7 +1304,7 @@ choices19.forEach(function (choice19) {
       // imageKotak19.style.transform = "rotate(180deg)";
       imageKotakSembilanbelas.style.transform = "translate(400px)";
       popup.style.display = "block";
-      bintang.style.display = "block";
+      aplause.style.display = "block";
 
       updateScore(100);
       soundEfectBenar.play();
@@ -1314,7 +1314,7 @@ choices19.forEach(function (choice19) {
         // imageKotak19.style.transform = "rotate(0deg)";
         imageKotakSembilanbelas.style.transform = "translate(0)";
         popup.style.display = "none";
-        bintang.style.display = "none";
+        aplause.style.display = "none";
       }, 3000);
 
       setTimeout(function () {
@@ -1330,7 +1330,7 @@ choices19.forEach(function (choice19) {
       // imageKotak19.style.transform = "rotate(180deg)";
       imageKotakSembilanbelas.style.transform = "translate(400px)";
       popup1.style.display = "block";
-      semangka.style.display = "block";
+      kecewa.style.display = "block";
 
       updateScore(-50);
       soundEfectSalah.play();
@@ -1340,7 +1340,7 @@ choices19.forEach(function (choice19) {
         // imageKotak19.style.transform = "rotate(0deg)";
         imageKotakSembilanbelas.style.transform = "translate(0)";
         popup1.style.display = "none";
-        semangka.style.display = "none";
+        kecewa.style.display = "none";
         soundEfectSalah.pause();
       }, 3000);
 
@@ -1370,7 +1370,7 @@ choices20.forEach(function (choice20) {
       // imageKotak20.style.transform = "rotate(180deg)";
       imageKotakDuapuluh.style.transform = "translate(400px)";
       popup.style.display = "block";
-      bintang.style.display = "block";
+      aplause.style.display = "block";
 
       updateScore(100);
       soundEfectBenar.play();
@@ -1380,7 +1380,7 @@ choices20.forEach(function (choice20) {
         // imageKotak20.style.transform = "rotate(0deg)";
         imageKotakDuapuluh.style.transform = "translate(0)";
         popup.style.display = "none";
-        bintang.style.display = "none";
+        aplause.style.display = "none";
       }, 3000);
 
       setTimeout(function () {
@@ -1397,7 +1397,7 @@ choices20.forEach(function (choice20) {
       // imageKotak20.style.transform = "rotate(180deg)";
       imageKotakDuapuluh.style.transform = "translate(400px)";
       popup1.style.display = "block";
-      semangka.style.display = "block";
+      kecewa.style.display = "block";
 
       updateScore(-50);
       soundEfectSalah.play();
@@ -1407,7 +1407,7 @@ choices20.forEach(function (choice20) {
         // imageKotak20.style.transform = "rotate(0deg)";
         imageKotakDuapuluh.style.transform = "translate(0)";
         popup1.style.display = "none";
-        semangka.style.display = "none";
+        kecewa.style.display = "none";
         soundEfectSalah.pause();
       }, 3000);
 
@@ -1486,7 +1486,7 @@ choices20.forEach(function (choice20) {
 //     } else {
 //       imageKotakSatu.style.transform = "translate(400px)";
 //       popup1.style.display = "block";
-//       semangka.style.display = "block";
+//       kecewa.style.display = "block";
 
 //       updateScore(incorrectPoints);
 //       incorrectSound.play();
@@ -1494,7 +1494,7 @@ choices20.forEach(function (choice20) {
 //       setTimeout(function () {
 //         imageKotakSatu.style.transform = "translate(0)";
 //         popup1.style.display = "none";
-//         semangka.style.display = "none";
+//         kecewa.style.display = "none";
 //         incorrectSound.pause();
 //       }, 3000);
 
@@ -1508,12 +1508,12 @@ choices20.forEach(function (choice20) {
 // const game2 = document.querySelector(".game2");
 
 // choices.forEach(function (choice) {
-//   choice.addEventListener("click", handleChoiceSelection(choice.textContent, soundEfectBenar, soundEfectSalah, popup, bintang, 100, -50, game1, game2));
+//   choice.addEventListener("click", handleChoiceSelection(choice.textContent, soundEfectBenar, soundEfectSalah, popup, aplause, 100, -50, game1, game2));
 // });
 
 // // Game 2
 // const game3 = document.querySelector(".game3");
 
 // choices2.forEach(function (choice2) {
-//   choice2.addEventListener("click", handleChoiceSelection(choice2.textContent, soundEfectBenar, soundEfectSalah, popup, bintang, 100, -50, game2, game3));
+//   choice2.addEventListener("click", handleChoiceSelection(choice2.textContent, soundEfectBenar, soundEfectSalah, popup, aplause, 100, -50, game2, game3));
 // });

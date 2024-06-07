@@ -41,11 +41,11 @@ body {
   }
 }
 
-.profil {
+.materi {
   text-align: center;
   margin: auto;
 }
-.profil a {
+.materi a {
   text-decoration: none;
   color: rgb(243, 233, 233);
 }
@@ -1853,7 +1853,7 @@ body {
   background-color: rgb(5, 230, 16);
 }
 
-.bintang {
+.aplause {
   background-image: url(../../gif/bintang6.gif);
   background-position: center;
   background-size: cover;
@@ -1868,7 +1868,7 @@ body {
   z-index: 999px;
 }
 
-.semangka {
+.kecewa {
   background-image: url(../../gif/kecewa3.gif);
   background-position: center;
   background-size: cover;
@@ -1971,7 +1971,7 @@ body {
 
   .tombol {
     margin-left: 200px;
-    /* position: absolute; */
+
     top: 150px;
     height: 50px;
     width: 130px;
