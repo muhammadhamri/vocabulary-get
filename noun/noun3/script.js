@@ -20,7 +20,7 @@ function updateScore(points) {
     setTimeout(function () {
       window.location.href = "end.html";
       // end.style.display = "block";
-    }, 6000);
+    }, 5000);
 
     setTimeout(function () {
       gameContainer.style.display = "none";

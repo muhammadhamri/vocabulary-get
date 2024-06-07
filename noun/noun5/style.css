@@ -1745,10 +1745,12 @@ body {
   left: 50%;
   transform: translateX(-50%);
   margin-top: 10px;
+  width: 400px;
 }
 .petunjuk p {
   text-align: center;
-  color: black;
+  color: yellow;
+  font-size: 18px;
 }
 
 .score-container {
@@ -1901,7 +1903,8 @@ body {
 .game19,
 .game20 {
   position: absolute;
-  top: 14.1%;
+  /* top: 14.1%; */
+  margin-top: -140px;
   left: 50%;
   transform: translate(-500%);
 
@@ -1935,7 +1938,7 @@ body {
 }
 /* MEDIA QUERY */
 
-@media (min-width: 1000px) {
+@media (min-width: 600px) {
   /* .game1, */
   .game2,
   .game3,

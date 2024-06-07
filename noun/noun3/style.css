@@ -764,7 +764,7 @@ body {
 .h27 {
   color: antiquewhite;
   margin: auto;
-  margin-top: 200px;
+  margin-top: 280px;
 }
 
 .imagekotak7 h2 {
@@ -953,7 +953,7 @@ body {
 .h210 {
   color: antiquewhite;
   margin: auto;
-  margin-top: 200px;
+  margin-top: 280px;
 }
 
 .imagekotak10 h2 {
@@ -1208,7 +1208,7 @@ body {
 .h214 {
   color: antiquewhite;
   margin: auto;
-  margin-top: 200px;
+  margin-top: 280px;
 }
 
 .imagekotak14 h2 {
@@ -1944,7 +1944,17 @@ body {
   .game7,
   .game8,
   .game9,
-  .game10 {
+  .game10,
+  .game11,
+  .game12,
+  .game13,
+  .game14,
+  .game15,
+  .game16,
+  .game17,
+  .game18,
+  .game19,
+  .game20 {
     transition: 2s;
     margin-top: -50px;
   }
