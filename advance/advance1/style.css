@@ -516,6 +516,12 @@ body {
   color: rgb(34, 21, 223);
   padding-left: 5px;
 }
+
+#choice6 {
+  height: 50px;
+  line-height: 15px;
+  align-content: center;
+}
 /* game 6 end */
 
 /* game 7 start */
@@ -1220,6 +1226,12 @@ body {
   color: blue;
   padding-left: 5px;
 }
+
+#choice16 {
+  height: 50px;
+  line-height: 15px;
+  align-content: center;
+}
 /* GAME 16 END */
 
 /* GAME 17 SATRT */
@@ -1290,6 +1302,12 @@ body {
   color: blue;
   padding-left: 5px;
 }
+
+#choice17 {
+  height: 50px;
+  line-height: 15px;
+  align-content: center;
+}
 /* GAME 17 END */
 
 /* GAME 18 SATRT */
@@ -1359,6 +1377,12 @@ body {
   font-size: 16px;
   color: blue;
   padding-left: 5px;
+}
+
+#choice18 {
+  height: 50px;
+  line-height: 15px;
+  align-content: center;
 }
 
 /* GAME 18 END */
@@ -1617,7 +1641,7 @@ body {
 }
 .petunjuk p {
   text-align: center;
-  color: black;
+  color: yellow;
   width: 400px;
 }
 
