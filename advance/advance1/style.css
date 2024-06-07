@@ -157,8 +157,9 @@ body {
 
 #choice2 {
   height: 50px;
-  line-height: 15px;
-  align-content: center;
+  line-height: 16px;
+  align-items: center;
+  display: flex;
 }
 
 /* game 1 end */
@@ -1229,8 +1230,9 @@ body {
 
 #choice16 {
   height: 50px;
-  line-height: 15px;
-  align-content: center;
+  line-height: 16px;
+  align-items: center;
+  display: flex;
 }
 /* GAME 16 END */
 
@@ -1374,8 +1376,9 @@ body {
 
 #choice18 {
   height: 50px;
-  line-height: 15px;
-  align-content: center;
+  line-height: 16px;
+  align-items: center;
+  display: flex;
 }
 
 /* GAME 18 END */
