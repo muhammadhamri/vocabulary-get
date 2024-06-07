@@ -125,9 +125,10 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   color: rgb(0, 0, 0);
-  font-size: 18px;
-  margin-right: 10px;
+  font-size: 16px;
+
   font-weight: lighter;
+  line-height: 20px;
 }
 
 .answer {
@@ -152,6 +153,12 @@ body {
   font-size: 16px;
   color: blue;
   padding-left: 5px;
+}
+
+#choice2 {
+  height: 50px;
+  line-height: 15px;
+  align-content: center;
 }
 
 /* game 1 end */
@@ -250,7 +257,7 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   color: rgb(0, 6, 10);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: lighter;
   line-height: 20px;
 }
@@ -676,7 +683,7 @@ body {
   text-align: left;
   margin-left: 10px;
   color: black;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: lighter;
   line-height: 20px;
 }
@@ -746,7 +753,7 @@ body {
   text-align: left;
   margin-left: 10px;
   color: black;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: lighter;
   line-height: 20px;
 }
@@ -816,7 +823,7 @@ body {
   text-align: left;
   margin-left: 10px;
   color: black;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: lighter;
   line-height: 20px;
 }
@@ -887,7 +894,7 @@ body {
   text-align: left;
   margin-left: 10px;
   color: black;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: lighter;
   line-height: 20px;
 }
@@ -958,7 +965,7 @@ body {
   text-align: left;
   margin-left: 10px;
   color: black;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: lighter;
   line-height: 20px;
 }
@@ -1029,7 +1036,7 @@ body {
   text-align: left;
   margin-left: 10px;
   color: black;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: lighter;
   line-height: 20px;
 }
@@ -1611,6 +1618,7 @@ body {
 .petunjuk p {
   text-align: center;
   color: black;
+  width: 400px;
 }
 
 .score-container {
