@@ -732,7 +732,7 @@ function handleButtonClick() {
     backsound.play();
     // imageKotak.style.transformOrigin = "top left";
     // imageKotak.style.transform = "rotate(180deg)";
-    imageKotak.style.transform = "translateY(-150px)";
+    imageKotak.style.transform = "translateY(-200px)";
     // textKotak.style.transform = "translateY(-50px)";
     input.style.border = "red 5px solid";
 
@@ -748,7 +748,7 @@ function handleButtonClick() {
   } else {
     popup.style.display = "flex";
     popup1.style.display = "none";
-    imageKotak.style.transform = "translateY(-150px)";
+    imageKotak.style.transform = "translateY(-200px)";
     input.style.border = "none";
     backsound.play();
     // textKotak.style.transform = "translateY(-50px)";

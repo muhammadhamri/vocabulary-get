@@ -718,7 +718,7 @@ choices11.forEach(function (choice11) {
 
       setTimeout(function () {
         game12.style.transform = "translate(-50%)";
-        game12.style.display = "none";
+        game11.style.display = "none";
       }, 6000);
     } else {
       imageKotak11.style.transform = "translateY(-50px)";

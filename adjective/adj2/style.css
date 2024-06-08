@@ -547,7 +547,7 @@ body {
 input {
   margin: auto;
   display: block;
-  width: 293px;
+  width: 393px;
   margin-top: 6px;
   padding: 5px;
   border: 1px solid rgb(128, 0, 100);
@@ -813,7 +813,7 @@ button:hover {
 .h220 {
   color: antiquewhite;
   margin: auto;
-  margin-top: 200px;
+  margin-top: 280px;
 }
 
 /* MEDI QUERIES */

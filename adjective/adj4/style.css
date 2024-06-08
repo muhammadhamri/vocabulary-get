@@ -585,6 +585,7 @@ button:hover {
   transform: translateX(-50%);
   text-align: center;
   color: rgb(255, 251, 7);
+  width: 400px;
 }
 /* .petunjuk p {
   } */
@@ -813,7 +814,7 @@ button:hover {
 .h220 {
   color: antiquewhite;
   margin: auto;
-  margin-top: 200px;
+  margin-top: 280px;
 }
 
 /* MEDI QUERIES */
