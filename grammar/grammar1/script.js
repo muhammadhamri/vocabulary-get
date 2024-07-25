@@ -75,6 +75,7 @@ choices.forEach(function (choice) {
 
       setTimeout(function () {
         game2.style.transform = "translate(-50%)";
+        game1.style.display = "none";
       }, 5800);
     } else {
       imageKotak1.style.transform = "translateX(-400px)";
@@ -133,6 +134,7 @@ choices2.forEach(function (choice2) {
 
       setTimeout(function () {
         game3.style.transform = "translate(-50%)";
+        game2.style.display = "none";
       }, 5800);
     } else {
       imageKotak2.style.transform = "translateX(-400px)";
@@ -190,6 +192,7 @@ choices3.forEach(function (choice3) {
 
       setTimeout(function () {
         game4.style.transform = "translate(-50%)";
+        game3.style.display = "none";
       }, 5800);
     } else {
       imageKotak3.style.transform = "translateX(-400px)";
@@ -247,6 +250,7 @@ choices4.forEach(function (choice4) {
 
       setTimeout(function () {
         game5.style.transform = "translate(-50%)";
+        game4.style.display = "none";
       }, 5800);
     } else {
       imageKotak4.style.transform = "translateX(-400px)";
@@ -304,6 +308,7 @@ choices5.forEach(function (choice5) {
 
       setTimeout(function () {
         game6.style.transform = "translate(-50%)";
+        game5.style.display = "none";
       }, 5800);
     } else {
       imageKotak5.style.transform = "translateX(-400px)";
@@ -361,6 +366,7 @@ choices6.forEach(function (choice6) {
 
       setTimeout(function () {
         game7.style.transform = "translate(-50%)";
+        game6.style.display = "none";
       }, 5800);
     } else {
       imageKotak6.style.transform = "translateX(-400px)";
@@ -416,6 +422,7 @@ choices7.forEach(function (choice7) {
 
       setTimeout(function () {
         game8.style.transform = "translate(-50%)";
+        game7.style.display = "none";
       }, 5800);
     } else {
       imageKotak7.style.transform = "translateX(-400px)";
@@ -474,6 +481,7 @@ choices8.forEach(function (choice8) {
 
       setTimeout(function () {
         game9.style.transform = "translate(-50%)";
+        game8.style.display = "none";
       }, 5800);
     } else {
       imageKotak8.style.transform = "translateX(-400px)";
@@ -531,6 +539,7 @@ choices9.forEach(function (choice9) {
 
       setTimeout(function () {
         game10.style.transform = "translate(-50%)";
+        game9.style.display = "none";
       }, 5800);
     } else {
       imageKotak9.style.transform = "translateX(-400px)";
@@ -588,6 +597,7 @@ choices10.forEach(function (choice10) {
 
       setTimeout(function () {
         game11.style.transform = "translate(-50%)";
+        game10.style.display = "none";
       }, 5800);
     } else {
       imageKotak10.style.transform = "translateX(-400px)";
@@ -645,6 +655,7 @@ choices11.forEach(function (choice11) {
 
       setTimeout(function () {
         game12.style.transform = "translate(-50%)";
+        game11.style.display = "none";
       }, 5800);
     } else {
       imageKotak11.style.transform = "translateX(-400px)";
@@ -702,6 +713,7 @@ choices12.forEach(function (choice12) {
 
       setTimeout(function () {
         game13.style.transform = "translate(-50%)";
+        game12.style.display = "none";
       }, 5800);
     } else {
       imageKotak12.style.transform = "translateX(-400px)";
@@ -759,6 +771,7 @@ choices13.forEach(function (choice13) {
 
       setTimeout(function () {
         game14.style.transform = "translate(-50%)";
+        game13.style.display = "none";
       }, 5800);
     } else {
       imageKotak13.style.transform = "translateX(-400px)";
@@ -816,6 +829,7 @@ choices14.forEach(function (choice14) {
 
       setTimeout(function () {
         game15.style.transform = "translate(-50%)";
+        game14.style.display = "none";
       }, 5800);
     } else {
       imageKotak14.style.transform = "translateX(-400px)";
@@ -873,6 +887,7 @@ choices15.forEach(function (choice15) {
 
       setTimeout(function () {
         game16.style.transform = "translate(-50%)";
+        game15.style.display = "none";
       }, 5800);
     } else {
       imageKotak15.style.transform = "translateX(-400px)";
@@ -929,6 +944,7 @@ choices16.forEach(function (choice16) {
 
       setTimeout(function () {
         game17.style.transform = "translate(-50%)";
+        game16.style.display = "none";
       }, 5800);
     } else {
       imageKotak16.style.transform = "translateX(-400px)";
@@ -986,6 +1002,7 @@ choices17.forEach(function (choice17) {
 
       setTimeout(function () {
         game18.style.transform = "translate(-50%)";
+        game17.style.display = "none";
       }, 5800);
     } else {
       imageKotak17.style.transform = "translateX(-400px)";
@@ -1044,6 +1061,7 @@ choices18.forEach(function (choice18) {
 
       setTimeout(function () {
         game19.style.transform = "translate(-50%)";
+        game18.style.display = "none";
       }, 5800);
     } else {
       imageKotak18.style.transform = "translateX(-400px)";
@@ -1102,6 +1120,7 @@ choices19.forEach(function (choice19) {
 
       setTimeout(function () {
         game20.style.transform = "translate(-50%)";
+        game19.style.display = "none";
       }, 5800);
     } else {
       imageKotak19.style.transform = "translateX(-400px)";
@@ -1159,6 +1178,7 @@ choices20.forEach(function (choice20) {
       setTimeout(function () {
         // end1.style.display = "block";
         gameContainer.style.display = "none";
+        game20.style.display = "none";
       }, 5800);
     } else {
       imageKotak20.style.transform = "translateX(-400px)";
