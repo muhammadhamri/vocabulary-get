@@ -97,6 +97,7 @@ choices.forEach(function (choice) {
 
       setTimeout(function () {
         game2.style.transform = "translate(-50%)";
+        game1.style.display = "none";
       }, 3500);
     }
   });
@@ -153,6 +154,7 @@ choices2.forEach(function (choice2) {
 
       setTimeout(function () {
         game3.style.transform = "translate(-50%)";
+        game2.style.display = "none";
       }, 5800);
     }
   });
@@ -209,6 +211,7 @@ choices3.forEach(function (choice3) {
 
       setTimeout(function () {
         game4.style.transform = "translate(-50%)";
+        game3.style.display = "none";
       }, 5800);
     }
   });
@@ -265,6 +268,7 @@ choices4.forEach(function (choice4) {
 
       setTimeout(function () {
         game5.style.transform = "translate(-50%)";
+        game4.style.display = "none";
       }, 5800);
     }
   });
@@ -321,6 +325,7 @@ choices5.forEach(function (choice5) {
 
       setTimeout(function () {
         game6.style.transform = "translate(-50%)";
+        game5.style.display = "none";
       }, 5800);
     }
   });
@@ -377,6 +382,7 @@ choices6.forEach(function (choice6) {
 
       setTimeout(function () {
         game7.style.transform = "translate(-50%)";
+        game6.style.display = "none";
       }, 5800);
     }
   });
@@ -431,6 +437,7 @@ choices7.forEach(function (choice7) {
 
       setTimeout(function () {
         game8.style.transform = "translate(-50%)";
+        game7.style.display = "none";
       }, 5800);
     }
   });
@@ -488,6 +495,7 @@ choices8.forEach(function (choice8) {
 
       setTimeout(function () {
         game9.style.transform = "translate(-50%)";
+        game8.style.display = "none";
       }, 5800);
     }
   });
@@ -544,6 +552,7 @@ choices9.forEach(function (choice9) {
 
       setTimeout(function () {
         game10.style.transform = "translate(-50%)";
+        game9.style.display = "none";
       }, 5800);
     }
   });
@@ -600,6 +609,7 @@ choices10.forEach(function (choice10) {
 
       setTimeout(function () {
         game11.style.transform = "translate(-50%)";
+        game10.style.display = "none";
       }, 5800);
     }
   });
@@ -656,6 +666,7 @@ choices11.forEach(function (choice11) {
 
       setTimeout(function () {
         game12.style.transform = "translate(-50%)";
+        game11.style.display = "none";
       }, 5800);
     }
   });
@@ -712,6 +723,7 @@ choices12.forEach(function (choice12) {
 
       setTimeout(function () {
         game13.style.transform = "translate(-50%)";
+        game12.style.display = "none";
       }, 5800);
     }
   });
@@ -768,6 +780,7 @@ choices13.forEach(function (choice13) {
 
       setTimeout(function () {
         game14.style.transform = "translate(-50%)";
+        game13.style.display = "none";
       }, 5800);
     }
   });
@@ -824,6 +837,7 @@ choices14.forEach(function (choice14) {
 
       setTimeout(function () {
         game15.style.transform = "translate(-50%)";
+        game14.style.display = "none";
       }, 5800);
     }
   });
@@ -880,6 +894,7 @@ choices15.forEach(function (choice15) {
 
       setTimeout(function () {
         game16.style.transform = "translate(-50%)";
+        game15.style.display = "none";
       }, 5800);
     }
   });
@@ -935,6 +950,7 @@ choices16.forEach(function (choice16) {
 
       setTimeout(function () {
         game17.style.transform = "translate(-50%)";
+        game16.style.display = "none";
       }, 5800);
     }
   });
@@ -991,6 +1007,7 @@ choices17.forEach(function (choice17) {
 
       setTimeout(function () {
         game18.style.transform = "translate(-50%)";
+        game17.style.display = "none";
       }, 5800);
     }
   });
@@ -1048,6 +1065,7 @@ choices18.forEach(function (choice18) {
 
       setTimeout(function () {
         game19.style.transform = "translate(-50%)";
+        game18.style.display = "none";
       }, 5800);
     }
   });
@@ -1105,6 +1123,7 @@ choices19.forEach(function (choice19) {
 
       setTimeout(function () {
         game20.style.transform = "translate(-50%)";
+        game19.style.display = "none";
       }, 5800);
     }
   });
@@ -1162,6 +1181,7 @@ choices20.forEach(function (choice20) {
       setTimeout(function () {
         end1.style.display = "block";
         gameContainer.style.display = "none";
+        game20.style.display = "none";
       }, 5800);
     }
   });
